@@ -1,0 +1,517 @@
+include::partial$variables.adoc[]
+= 快速入门
+:revdate: 2025-11-06
+:page-revdate: {revdate}
+:description: Getting started with {project-name}, installing the {project-name} stack and taking care of prerequisites and authentication
+:doc-persona: ["kubewarden-all"]
+:doc-topic: ["quick-start"]
+:doc-type: ["tutorial"]
+:keywords: ["{project-name}", "installation", "quick start", "policyserver", "clusteradmissionpolicy", "admissionpolicy"]
+:sidebar_label: Quick start
+:sidebar_position: 20
+:current-version: {page-origin-branch}
+
+++++
+<head>
+<script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+</head>
+++++
+
+{project-name} 堆栈包括：
+
+* 一个或多个 {cluster-admission-policy} 资源：这为 Kubernetes 集群定义了策略。
+* 一个或多个 {policy-server} 资源：表示 {short-project-name} `PolicyServer` 的部署。{short-project-name} `PolicyServer` 加载并评估您的管理员策略。
+* 一个或多个 {admission-policy} 资源：为定义的命名空间制定的策略。
+* 一个 `kubewarden-controller` 的部署：此控制器监控 {cluster-admission-policy} 资源并与 {short-project-name} {policy-server} 组件交互。
+
+[TIP]
+====
+
+{short-project-name} 在 xref:reference/CRDs.adoc[此处] 描述了其 Kubernetes 自定义资源定义 (CRD)。
+
+本教程和其余文档中提到的 {short-project-name} CRD 都有易于使用的简称。以下是 CRD 的简称：
+
+[cols="1,1"]
+|===
+| 资源 | 简称
+
+| AdmissionPolicies
+| *ap*
+
+| ClusterAdmissionPolicies
+| *cap*
+
+| AdmissionPolicyGroups
+| *apg*
+
+| ClusterAdmissionPolicyGroups
+| *capg*
+
+| PolicyServers
+| *ps*
+
+|===
+
+====
+
+
+== 安装
+
+[IMPORTANT]
+.Authentication
+====
+
+:gh-pat-url: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+
+您可以从位于 https://ghcr.io 的 GitHub 容器注册中心检索 {short-project-name} 策略。您需要身份验证才能将存储库与 {short-project-name} CLI 一起使用，即 {gh-pat-url}[GitHub 个人访问令牌] (PAT)。如果您还没有创建，他们的文档会指导您创建一个。然后您可以使用如下命令进行身份验证：
+
+[subs="+attributes", console]
+----
+echo $PAT | docker login ghcr.io --username <我的-gh-用户名> --password-stdin
+----
+
+====
+
+
+使用 `helm` chart 部署 {short-project-name} 堆栈，如下所示：
+
+[subs="+attributes", console]
+----
+helm repo add kubewarden https://charts.kubewarden.io
+----
+
+[subs="+attributes", console]
+----
+helm repo update kubewarden
+----
+
+在您的 Kubernetes 集群的 `kubewarden` 命名空间中安装以下 Helm chart：
+
+* `kubewarden-crds`，它注册 {cluster-admission-policy}、{admission-policy} 和 {policy-server} 自定义资源定义。此外，还有审计扫描器使用的 {report} 自定义资源定义。
+* `kubewarden-controller`，它安装 {short-project-name} 控制器和审计扫描器
++
+[NOTE]
+====
+
+如果您需要禁用审计扫描器组件，请查看审计扫描器安装 xref:howtos/audit-scanner.adoc[文档页面]。
+
+====
++
+* `kubewarden-defaults`，它创建一个名为 `default` 的 `PolicyServer` 资源。它还可以安装一组推荐的策略，通过强制执行众所周知的最佳实践来保护您的集群。
+
+[subs="+attributes", console]
+----
+helm install --wait -n kubewarden --create-namespace kubewarden-crds kubewarden/kubewarden-crds
+----
+
+[subs="+attributes", console]
+----
+helm install --wait -n kubewarden kubewarden-controller kubewarden/kubewarden-controller
+----
+
+[subs="+attributes", console]
+----
+helm install --wait -n kubewarden kubewarden-defaults kubewarden/kubewarden-defaults
+----
+
+[CAUTION]
+====
+
+从 https://github.com/kubewarden/kubewarden-controller/releases/tag/v0.4.0[`v0.4.0`] 开始，不再使用 `kubewarden-controller` chart 创建名为 `default` 的 `PolicyServer` 资源。现在，一个名为 `kubewarden-defaults` 的 Helm chart 会安装默认的策略服务器。
+
+这意味着，如果在升级或删除时未使用最新版本的 `kubewarden-controller`，您的默认策略服务器将不会被升级或删除。因此，如果您尝试使用冲突的信息（例如，相同的策略服务器名称）安装 `kubewarden-defaults`，您可能会遇到问题。要安装 `kubewarden-defaults` Helm chart 的未来升级，请在安装新 chart 之前删除由 `kubewarden-controller` 创建的现有 `PolicyServer` 资源。现在，您可以使用 Helm 升级来更新您的策略服务器，而不会出现资源冲突。当您删除 `PolicyServer` 时，您也会删除所有绑定到它的策略。
+
+====
+
+
+默认配置值足以满足大多数部署。https://charts.kubewarden.io/#configuration[文档] 描述了所有选项。
+
+== 主要组件
+
+{short-project-name} 有三个与之交互的主要组件：
+
+* {policy-server}
+* {cluster-admission-policy}
+* {admission-policy}
+
+=== `PolicyServer`
+
+`kubewarden-controller` 管理一个 {short-project-name} `PolicyServer`。您可以在同一个 Kubernetes 集群中部署多个 {policy-server}。
+
+`PolicyServer` 通过对传入请求执行 {short-project-name} 策略来验证它们。
+
+这是默认的 `PolicyServer` 配置：
+
+[subs="+attributes", yaml]
+----
+apiVersion: policies.kubewarden.io/v1
+kind: PolicyServer
+metadata:
+  name: reserved-instance-for-tenant-a
+spec:
+  image: ghcr.io/kubewarden/policy-server:v1.3.0
+  replicas: 2
+  serviceAccountName: ~
+  env:
+    - name: KUBEWARDEN_LOG_LEVEL
+      value: debug
+----
+
+[NOTE]
+====
+
+检查 https://github.com/kubewarden/policy-server/pkgs/container/policy-server[最新发布的 `PolicyServer` 版本] 并更改标签以匹配。
+
+====
+
+`PolicyServer` 资源的属性概述：
+
+[cols="^,,"]
+|===
+| 必需 | 占位符 | 描述
+
+| Y
+| `image`
+| 容器镜像的名称
+
+| Y
+| `replicas`
+| 所需实例的数量
+
+| N
+| `serviceAccountName`
+| 用于 `PolicyServer` 部署的 `ServiceAccount` 的名称。如果
+  没有提供值，则使用 `kubewarden-controller` 安装命名空间中的默认 `ServiceAccount`。
+
+| N
+| `env`
+| 环境变量列表
+
+| N
+| `annotations`
+| 注解列表
+
+|===
+
+更改这些属性中的任何一个都会导致使用新配置的 `PolicyServer` 部署。
+
+=== ClusterAdmissionPolicy
+
+{cluster-admission-policy} 资源是 {short-project-name} 堆栈的核心。它定义了策略如何评估请求。
+
+强制执行策略是 Kubernetes 管理员执行的最常见的操作。您可以声明任意数量的策略，每个策略都针对一个或多个 Kubernetes 资源（即 `pods`、`Custom Resource` 等）。您还可以指定应用于目标资源的操作类型。可用的操作有 `CREATE`、`UPDATE`、`DELETE` 和 `CONNECT`。
+
+默认 {cluster-admission-policy} 配置：
+
+[subs="+attributes", yaml]
+----
+apiVersion: policies.kubewarden.io/v1
+kind: ClusterAdmissionPolicy
+metadata:
+  name: psp-capabilities
+spec:
+  policyServer: reserved-instance-for-tenant-a
+  module: registry://ghcr.io/kubewarden/policies/psp-capabilities:v0.1.9
+  rules:
+    - apiGroups: [""]
+      apiVersions: ["v1"]
+      resources: ["pods"]
+      operations:
+        - CREATE
+        - UPDATE
+  mutating: true
+  settings:
+    allowed_capabilities:
+      - CHOWN
+    required_drop_capabilities:
+      - NET_ADMIN
+----
+
+{cluster-admission-policy} 资源的属性概述：
+
+[cols="^,,"]
+|===
+| 必需 | 占位符 | 描述
+
+| N
+| `policy-server`
+| 标识一个现有的 `PolicyServer` 对象。只有
+  此 `PolicyServer` 实例为策略提供服务。名为 `default` 的策略服务器为没有显式 `PolicyServer` 的 {cluster-admission-policy} 提供服务。
+
+| Y
+| `module`
+| {short-project-name} 策略的位置。允许使用以下方案：
+
+| N
+|
+| - `registry`：从
+    https://github.com/opencontainers/artifacts[OCI 工件] 兼容的
+    容器注册中心下载策略。示例：`registry://<OCI 注册中心/策略 URL>`
+
+| N
+|
+| - `http`、`https`：从常规 HTTP(s) 服务器下载策略。
+    示例：`\https://<网站/策略 URL>`
+
+| N
+|
+| - `file`：从计算机文件系统中的文件加载策略。
+    示例：`\file:///<策略 WASM 二进制文件完整路径>`
+
+| Y
+| `resources`
+| 由策略评估的 Kubernetes 资源
+
+| Y
+| `operations`
+| API 服务器应将先前给定类型的哪些操作转发到此
+  准入策略以进行评估。
+
+| Y
+| `mutating`
+| 对于可以改变
+  传入请求的策略，将此布尔值设置为 `true`
+
+| N
+| `settings`
+| 包含策略配置值的自由格式对象
+
+| N
+| `failurePolicy`
+| 如果由策略评估的请求导致错误，则要采取的操作。
+  允许以下选项：
+
+| N
+|
+| - `Ignore`：忽略调用 webhook 的错误，API 请求
+    继续。
+
+| N
+|
+| - `Fail`：调用 webhook 的错误导致准入失败
+    和 API 请求被拒绝。
+|===
+
+[NOTE]
+====
+
+控制器注册 {cluster-admission-policy} 资源 `*` webhook `scope`。这意味着注册的 webhook 会转发所有与给定 `resources` 和 `operations` 匹配的请求，无论是命名空间资源还是集群范围的资源。
+
+====
+
+
+=== AdmissionPolicy
+
+{admission-policy} 是一个命名空间范围的资源。该策略只处理针对定义了 {admission-policy} 的命名空间的请求。除此之外，{admission-policy} 和 {cluster-admission-policy} 资源之间没有功能差异。
+
+[IMPORTANT]
+====
+
+{admission-policy} 需要 Kubernetes 1.21.0 或更高版本。这是因为 {short-project-name} 使用了在 Kubernetes 1.21.0 中引入的 `kubernetes.io/metadata.name` 标签。
+
+====
+
+这些自定义资源的完整文档位于 https://github.com/kubewarden/kubewarden-controller/blob/main/docs/crds/README.asciidoc[此处] 或 https://doc.crds.dev/github.com/kubewarden/kubewarden-controller[docs.crds.dev] 上。
+
+== Example: Enforce your first policy
+
+我们将使用 https://github.com/kubewarden/pod-privileged-policy[`pod-privileged`] 策略。我们希望通过强制执行此策略来防止在我们的 Kubernetes 集群内创建特权容器。
+
+让我们定义一个 {cluster-admission-policy} 来做到这一点：
+
+[subs="+attributes", console]
+----
+kubectl apply -f - <<EOF
+apiVersion: policies.kubewarden.io/v1
+kind: ClusterAdmissionPolicy
+metadata:
+  name: privileged-pods
+spec:
+  module: registry://ghcr.io/kubewarden/policies/pod-privileged:v0.2.2
+  rules:
+  - apiGroups: [""]
+    apiVersions: ["v1"]
+    resources: ["pods"]
+    operations:
+    - CREATE
+    - UPDATE
+  mutating: false
+EOF
+----
+
+这将产生以下输出：
+
+[subs="+attributes", console]
+----
+clusteradmissionpolicy.policies.kubewarden.io/privileged-pods created
+----
+
+实例化 {cluster-admission-policy} 后，状态变为 `pending`，并强制对目标 `PolicyServer` 进行滚动更新。在本例中，它是名为 `default` 的 `PolicyServer`。您可以通过运行以下命令来监控滚动更新：
+
+[subs="+attributes", console]
+----
+kubectl get clusteradmissionpolicy.policies.kubewarden.io/privileged-pods
+----
+
+您应该会看到以下输出：
+
+[subs="+attributes", console]
+----
+NAME              POLICY SERVER   MUTATING   STATUS
+privileged-pods   default         false      pending
+----
+
+新策略准备就绪后，`kubewarden-controller` 会注册一个 https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/#validatingwebhookconfiguration-v1-admissionregistration-k8s-io[ValidatingWebhookConfiguration] 对象来为其提供服务。
+
+一旦每个 `PolicyServer` 实例的部署完成，{cluster-admission-policy} 状态就会变为 `active`。使用以下命令显示 {validating-webhook-configuration}：
+
+[subs="+attributes", console]
+----
+kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l kubewarden
+----
+
+您应该会看到以下输出：
+
+[subs="+attributes", console]
+----
+NAME                          WEBHOOKS   AGE
+clusterwide-privileged-pods   1          9s
+----
+
+一旦 {cluster-admission-policy} 处于活动状态并且 {validating-webhook-configuration} 注册，您就可以测试该策略。
+
+首先，您可以创建一个容器_不_处于 `privileged` 模式的 Pod：
+
+[subs="+attributes", console]
+----
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  name: unprivileged-pod
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+EOF
+----
+
+这将产生以下输出：
+
+[subs="+attributes", console]
+----
+pod/unprivileged-pod created
+----
+
+Pod 已成功创建。
+
+现在，您可以创建一个至少带有一个容器 `privileged` 标志的 Pod：
+
+[subs="+attributes", console]
+----
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  name: privileged-pod
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      securityContext:
+          privileged: true
+EOF
+----
+
+策略拒绝创建 Pod，您应该会看到以下消息：
+
+[subs="+attributes", console]
+----
+来自服务器的错误：创建“STDIN”时出错：准入 webhook“clusterwide-privileged-pods.kubewarden.admission”拒绝了请求：不允许特权容器
+----
+
+[NOTE]
+====
+
+两个示例都没有定义 `namespace`，这意味着目标是 `default` 命名空间。但是，正如您在第二个示例中看到的那样，该策略仍然适用。如前所述，这是因为范围是集群范围的，而不是针对特定的命名空间。
+
+====
+
+
+== Uninstall
+
+您可以通过卸载 `helm` chart 来删除创建的资源，如下所示：
+
+[subs="+attributes", console]
+----
+helm uninstall --namespace kubewarden kubewarden-defaults
+----
+
+[subs="+attributes", console]
+----
+helm uninstall --namespace kubewarden kubewarden-controller
+----
+
+[subs="+attributes", console]
+----
+helm uninstall --namespace kubewarden kubewarden-crds
+----
+
+删除 `helm` chart 后，删除用于部署 {short-project-name} 堆栈的 Kubernetes 命名空间：
+
+[subs="+attributes", console]
+----
+kubectl delete namespace kubewarden
+----
+
+[CAUTION]
+====
+
+{short-project-name} 包含一个 helm pre-delete hook，可删除所有 `PolicyServer` 和 `kubewarden-controller`。然后 `kubewarden-controller` 会删除所有资源，因此在执行 helm uninstall 时 `kubewarden-controller` 正在运行非常重要。
+
+====
+
+
+{short-project-name} 会删除 {validating-webhook-configuration} 和 {mutating-webhook-configuration}。请通过以下方式检查：
+
+[subs="+attributes", console]
+----
+kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l "kubewarden"
+----
+
+[subs="+attributes", console]
+----
+kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io -l "kubewarden"
+----
+
+如果这些资源没有自动删除，请使用以下命令手动删除它们：
+
+[subs="+attributes", console]
+----
+kubectl delete -l "kubewarden" validatingwebhookconfigurations.admissionregistration.k8s.io
+----
+
+[subs="+attributes", console]
+----
+kubectl delete -l "kubewarden" mutatingwebhookconfigurations.admissionregistration.k8s.io
+----
+
+== Wrapping up
+
+{cluster-admission-policy} 是集群操作员必须管理的核心资源。`kubewarden-controller` 模块会自动处理运行策略所需的其余资源的配置。
+
+== What's next?
+
+现在，您已准备好部署 {short-project-name}！请查看 https://artifacthub.io/packages/search?kind=13[artifacthub.io] 上的策略，或 https://github.com/topics/kubewarden-policy[GitHub] 上的策略，或重用 xref:tutorials/writing-policies/rego/01-intro-rego.adoc[以下章节] 中所示的现有 Rego 策略。
+
+.Full list of available policies on ArtifactHub
+[%collapsible, subs="+macros"]
+======
+
+++++
+
+<div class="artifacthub-widget-group" data-url="https://artifacthub.io/packages/search?kind=13&sort=relevance&page=1" data-theme="light" data-header="false" data-stars="false" data-color="#fe7c3f" data-responsive="true" data-loading="true"></div>
+
+++++
+
+======

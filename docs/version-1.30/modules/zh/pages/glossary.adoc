@@ -1,0 +1,75 @@
+include::partial$variables.adoc[]
+= 词汇表
+:revdate: 2025-11-06
+:page-revdate: {revdate}
+:description: {project-name} glossary
+:doc-persona: ["kubewarden-all"]
+:doc-topic: ["glossary"]
+:doc-type: ["explanation"]
+:keywords: ["kubewarden", "glossary"]
+:sidebar_label: Glossary
+:sidebar_position: 90
+:current-version: {page-origin-branch}
+
+== A
+
+=== AdmissionPolicy
+
+一个命名空间范围的资源。该策略只处理针对定义了 AdmissionPolicy 的命名空间的请求。
+
+== C
+
+=== ClusterAdmissionPolicy
+
+一个针对集群范围资源的 <<_admissionpolicy,AdmissionPolicy>>。
+
+=== ClusterReport
+
+<<_report,Report>> 和 ClusterReport 存储策略扫描的结果。使用哪一个取决于资源的范围。
+
+== K
+
+=== kwctl
+
+一个用于生成和测试用于策略部署的 Kubernetes YAML 文件的 CLI 工具。
+
+== M
+
+=== MutatingWebhookConfiguration
+
+由 {short-project-name} 控制器创建的 https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes 资源]，用于告知 Kubernetes 将 `AdmissionReview` 发送到何处。换句话说，这就是 {short-project-name} 控制器告知 Kubernetes 在何处查找资源改变策略的方式。
+
+== P
+
+=== 报告
+
+报告和 <<_clusterreport,ClusterReport>> 存储策略扫描的结果。使用哪一个取决于资源的范围。
+
+[#_policy_server]
+=== PolicyServer
+
+PolicyServer 通过对请求执行 {short-project-name} 策略来验证传入的请求。
+
+== V
+
+=== ValidatingWebhookConfiguration
+
+由 {short-project-name} 控制器创建的 https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes 资源]，用于告知 Kubernetes 将 `AdmissionReview` 发送到何处。换句话说，这就是 {short-project-name} 告知 Kubernetes 在何处查找资源验证策略的方式。
+
+== W
+
+=== waPC
+
+WebAssembly 过程调用。https://wapc.io。
+
+=== WASI
+
+WebAssembly 系统接口。https://wasi.dev。
+
+=== Wasm
+
+一种用于基于堆栈的虚拟机的二进制指令格式。专为 Web 部署而设计。https://webassembly.org。
+
+=== Wasmtime
+
+WebAssembly 的运行时。https://wasmtime.dev。

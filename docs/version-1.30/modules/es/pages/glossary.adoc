@@ -1,0 +1,75 @@
+include::partial$variables.adoc[]
+= Glosario
+:revdate: 2025-11-06
+:page-revdate: {revdate}
+:description: {project-name} glossary
+:doc-persona: ["kubewarden-all"]
+:doc-topic: ["glossary"]
+:doc-type: ["explanation"]
+:keywords: ["kubewarden", "glossary"]
+:sidebar_label: Glossary
+:sidebar_position: 90
+:current-version: {page-origin-branch}
+
+== A
+
+=== AdmissionPolicy
+
+Un recurso de todo el espacio de nombres. La política procesa solo aquellas solicitudes dirigidas al espacio de nombres en el que se define la AdmissionPolicy.
+
+== C
+
+=== ClusterAdmissionPolicy
+
+Una <<_admissionpolicy,AdmissionPolicy>> que se dirige a recursos de todo el clúster.
+
+=== ClusterReport
+
+Un <<_report,Report>> y un ClusterReport almacenan los resultados de los escaneos de políticas. Cuál se utiliza depende del alcance del recurso.
+
+== K
+
+=== kwctl
+
+Una herramienta CLI para generar y probar archivos YAML de Kubernetes para el despliegue de políticas.
+
+== M
+
+=== MutatingWebhookConfiguration
+
+Un https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[recurso de Kubernetes] creado por el controlador de {short-project-name} para que Kubernetes sepa dónde enviar una `AdmissionReview`. En otras palabras, así es como un controlador de {short-project-name} informa a Kubernetes dónde encontrar una política de mutación de recursos.
+
+== P
+
+=== Report
+
+Un Report y un <<_clusterreport,ClusterReport>> almacenan los resultados de los escaneos de políticas. Cuál se utiliza depende del alcance del recurso.
+
+[#_policy_server]
+=== PolicyServer
+
+Un PolicyServer valida las solicitudes entrantes ejecutando políticas de {short-project-name} contra las solicitudes.
+
+== V
+
+=== ValidatingWebhookConfiguration
+
+Un https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[recurso de Kubernetes] creado por el controlador de {short-project-name} para que Kubernetes sepa dónde enviar una `AdmissionReview`. En otras palabras, así es como {short-project-name} informa a Kubernetes dónde encontrar una política de validación de recursos.
+
+== W
+
+=== waPC
+
+Llamadas a Procedimientos de WebAssembly. https://wapc.io.
+
+=== WASI
+
+Interfaz del Sistema WebAssembly. https://wasi.dev.
+
+=== Wasm
+
+Un formato de instrucción binario para una máquina virtual basada en pila. Diseñado para el despliegue en la web. https://webassembly.org.
+
+=== Wasmtime
+
+Un tiempo de ejecución para WebAssembly. https://wasmtime.dev.

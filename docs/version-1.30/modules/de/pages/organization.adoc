@@ -1,0 +1,46 @@
+include::partial$variables.adoc[]
+= Dokumentationsorganisation
+:revdate: 2025-11-06
+:page-revdate: {revdate}
+:sidebar_label: Organization
+:sidebar_position: 75
+:description: How is the {project-name} documentation organized?
+:keywords: ["admission policy manager", "{project-name}", documentation, organization]
+:doc-persona: [kubewarden-all]
+:doc-type: [explanation]
+:doc-topic: [explanation]
+
+{project-name} organisiert die Projektdokumentation wie folgt:
+
+* xref:/introduction.adoc[Einführung]
+* xref:/quick-start.adoc[Schnellstart]
+* _Tutorials_—Lernen durch Beispiele.
+* _Erklärungen_—zugrunde liegende Konzepte.
+* _Anleitungen_—Erledigung von {short-project-name}-Aufgaben.
+* _Referenz_
+* Organisation—diese Seite
+* xref:/personas.adoc[Personas]—für wen ist {short-project-name}?
+* xref:/disclosure.adoc[Sicherheit]
+* xref:/glossary.adoc[Glossar]
+
+Der größte Teil des Materials befindet sich in den vier Abschnitten _Tutorials_, _Erklärungen_, _Anleitungen_ und _Referenz_. Es kann zu Überschneidungen kommen, da sich die Abschnitte nicht gegenseitig ausschließen. Das {short-project-name}-Projekt versucht, dem link:https://diataxis.fr/[Diátaxis]-Dokumentationsframework zu folgen.
+
+== Navigation
+
+Das Inhaltsmenü auf der linken Seite zeigt immer Ihren aktuellen Dokumentenstandort an. Das Abschnittsmenü auf der rechten Seite zeigt die Abschnitte der aktuellen Seite. Oben im Hauptinhaltsbereich jeder Seite befindet sich außerdem eine 'Breadcrumbs'-Funktion.
+
+== Suche
+
+Im Kopfbereich jeder Seite befindet sich ein Suchfeld.
+
+== Bearbeiten
+
+Ein Link zum Quellcode der Seite auf GitHub befindet sich am Ende jeder Seite.
+
+== Andere Ressourcen
+
+Außerdem werden gepflegt:
+
+* link:https://github.com/kubewarden/rfc[RFCs] für das Projekt.
+* Eine Reihe von link:https://www.kubewarden.io/blog/[Blog-Beiträgen] im Zusammenhang mit {community-name}-Veröffentlichungen.
+* Elemente im Zusammenhang mit der link:https://github.com/kubewarden/community[Community]-Verwaltung von {community-name}.

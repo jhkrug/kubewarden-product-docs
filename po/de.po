@@ -1,0 +1,1839 @@
+# German translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-06 17:15+0100\n"
+"PO-Revision-Date: 2025-11-06 17:15+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/introduction.adoc:2
+#, no-wrap
+msgid "What is {project-name}?"
+msgstr "Was ist {project-name}?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:17
+msgid ""
+"{project-name} is a Kubernetes Policy Engine.  It aims to be the Universal "
+"Policy Engine for Kubernetes."
+msgstr "{project-name} ist eine Kubernetes Policy Engine. Ihr Ziel ist es, die universelle Policy Engine für Kubernetes zu sein."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:19
+msgid "{intro-paragraph}"
+msgstr "{intro-paragraph}"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:21
+msgid "Now here is a link into rancher-product-docs Overview:"
+msgstr "Hier ist ein Link zur Übersicht der Rancher-Produktdokumentation:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:23
+msgid "xref:rancher-manager:en:/about-rancher/overview.adoc[Overview]"
+msgstr "xref:rancher-manager:de:/about-rancher/overview.adoc[Übersicht]"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:24
+#, no-wrap
+msgid "How does {project-name} help?"
+msgstr "Wie hilft {project-name}?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:28
+msgid ""
+"{short-project-name} offers flexibility for policy admission and enforcement "
+"in a Kubernetes environment."
+msgstr "{short-project-name} bietet Flexibilität bei der Zulassung und Durchsetzung von Richtlinien in einer Kubernetes-Umgebung."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/introduction.adoc:29
+#, no-wrap
+msgid "Benefits and value"
+msgstr "Vorteile und Wert"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:32
+msgid ""
+"Use any programming language that generates https://"
+"webassembly.org[WebAssembly] binaries to write your policies."
+msgstr "Verwenden Sie eine beliebige Programmiersprache, die https://webassembly.org[WebAssembly]-Binärdateien erzeugt, um Ihre Richtlinien zu schreiben."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:33
+msgid ""
+"WebAssembly enables policy compatibility across processors and operating "
+"systems."
+msgstr "WebAssembly ermöglicht die Kompatibilität von Richtlinien über Prozessoren und Betriebssysteme hinweg."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:34
+msgid ""
+"Reuse of policies from other policy engines without the need for rewriting "
+"them."
+msgstr "Wiederverwendung von Richtlinien aus anderen Policy-Engines, ohne dass sie neu geschrieben werden müssen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:35
+msgid ""
+"Distribute policies using standard and secure mechanisms such as https://"
+"opencontainers.org[OCI] compliant registries."
+msgstr "Verteilen Sie Richtlinien über standardmäßige und sichere Mechanismen wie https://opencontainers.org[OCI]-konforme Registries."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:36
+msgid "Policy enforcement at admission ensures only compliant workloads run."
+msgstr "Die Durchsetzung von Richtlinien bei der Zulassung stellt sicher, dass nur konforme Workloads ausgeführt werden."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:37
+msgid ""
+"The {short-project-name} audit scanner actively and continuously checks "
+"policy enforcement over time."
+msgstr "Der {short-project-name}-Audit-Scanner überprüft aktiv und kontinuierlich die Einhaltung der Richtlinien im Laufe der Zeit."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:38
+msgid ""
+"Verify policies using https://slsa.dev[SLSA] (Supply Chain Levels for "
+"Software Artifacts) tools and practices."
+msgstr "Überprüfen Sie Richtlinien mit https://slsa.dev[SLSA] (Supply Chain Levels for Software Artifacts) Tools und Praktiken."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:39
+msgid ""
+"{project-name} provides a comprehensive approach to admission policy "
+"management."
+msgstr "{project-name} bietet einen umfassenden Ansatz für das Management von Zulassungsrichtlinien."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:40
+msgid ""
+"CNCF membership and a growing open source community and ecosystem help "
+"{short-project-name} with transparency, collaboration and improvement."
+msgstr "Die CNCF-Mitgliedschaft und eine wachsende Open-Source-Community und ein wachsendes Ökosystem helfen {short-project-name} bei Transparenz, Zusammenarbeit und Verbesserung."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/introduction.adoc:41
+#, no-wrap
+msgid "Use cases"
+msgstr "Anwendungsfälle"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:45
+msgid ""
+"Security hardening. For example, enforce policies restricting container "
+"privileges, enforce network policies, or block insecure image registries."
+msgstr "Sicherheitshärtung. Erzwingen Sie beispielsweise Richtlinien, die Container-Privilegien einschränken, Netzwerkrichtlinien durchsetzen oder unsichere Image-Registries blockieren."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:47
+msgid ""
+"Compliance auditing. Ensure workloads comply with organizational or "
+"regulatory standards and best practices."
+msgstr "Compliance-Auditing. Stellen Sie sicher, dass Workloads den organisatorischen oder regulatorischen Standards und Best Practices entsprechen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:48
+msgid "Resource optimization. Enforce resource limits and quotas."
+msgstr "Ressourcenoptimierung. Erzwingen Sie Ressourcenlimits und -quoten."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:51
+msgid ""
+"There is further documentation of use cases on the xref:use-cases.adoc[use "
+"cases] page."
+msgstr "Weitere Dokumentationen zu Anwendungsfällen finden Sie auf der Seite xref:use-cases.adoc[Anwendungsfälle]."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:52
+#, no-wrap
+msgid "New to {short-project-name}?"
+msgstr "Neu bei {short-project-name}?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:60
+msgid ""
+"If new to the {short-project-name} project start with the xref:quick-"
+"start.adoc[Quick start guide] and the xref:explanations/"
+"architecture.adoc[architecture] page.  Then it depends where your interests "
+"take you. For policy developers there are language specific sections in the "
+"tutorials. For integrators and administrators there is a 'how-tos' section. "
+"The explanations section contains useful background material. There is also "
+"a xref:glossary.adoc[glossary]."
+msgstr "Wenn Sie neu im {short-project-name}-Projekt sind, beginnen Sie mit der xref:quick-start.adoc[Schnellstartanleitung] und der Seite xref:explanations/architecture.adoc[Architektur]. Dann hängt es davon ab, wohin Ihre Interessen Sie führen. Für Richtlinienentwickler gibt es sprachspezifische Abschnitte in den Tutorials. Für Integratoren und Administratoren gibt es einen 'How-tos'-Abschnitt. Der Erklärungsabschnitt enthält nützliches Hintergrundmaterial. Es gibt auch ein xref:glossary.adoc[Glossar]."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:61
+#, no-wrap
+msgid "What is WebAssembly?"
+msgstr "Was ist WebAssembly?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:64
+msgid "As stated on https://webassembly.org/[WebAssembly's official website]:"
+msgstr "Wie auf der https://webassembly.org/[offiziellen Website von WebAssembly] angegeben:"
+
+#. type: delimited block _
+#: docs/version-1.30/modules/en/pages/introduction.adoc:70
+msgid ""
+"WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-"
+"based virtual machine. Wasm is designed as a portable compilation target for "
+"programming languages, enabling deployment on the web for client and server "
+"applications."
+msgstr "WebAssembly (abgekürzt Wasm) ist ein binäres Befehlsformat für eine stackbasierte virtuelle Maschine. Wasm ist als portables Kompilierungsziel für Programmiersprachen konzipiert und ermöglicht den Einsatz im Web für Client- und Serveranwendungen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:75
+msgid ""
+"Wasm was originally conceived as a browser \"extension\". However, the "
+"WebAssembly community is engaged in efforts to allow the execution of Wasm "
+"code outside browsers."
+msgstr "Wasm wurde ursprünglich als Browser-\"Erweiterung\" konzipiert. Die WebAssembly-Community bemüht sich jedoch, die Ausführung von Wasm-Code außerhalb von Browsern zu ermöglichen."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:76
+#, no-wrap
+msgid "Why use WebAssembly?"
+msgstr "Warum WebAssembly verwenden?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:81
+msgid ""
+"Users can write Kubernetes policies using their favorite programming "
+"language, provided its toolchain can generate Wasm binaries."
+msgstr "Benutzer können Kubernetes-Richtlinien in ihrer bevorzugten Programmiersprache schreiben, sofern deren Toolchain Wasm-Binärdateien generieren kann."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:85
+msgid ""
+"Wasm modules are portable, once built they can run on any kind of processor "
+"architecture and operating system. For example, a policy developed and built "
+"on Apple Silicon can run on AMD64/Intel64 Linux without conversion."
+msgstr "Wasm-Module sind portabel, einmal erstellt können sie auf jeder Art von Prozessorarchitektur und Betriebssystem ausgeführt werden. Zum Beispiel kann eine auf Apple Silicon entwickelte und erstellte Richtlinie ohne Konvertierung auf AMD64/Intel64 Linux ausgeführt werden."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:89
+msgid ""
+"Policy authors can reuse their skills, tools and best practices. Policies "
+"are \"traditional\" programs that can have reusable blocks (regular "
+"libraries). You can lint and test them and you can plug them into current CI "
+"and CD workflows."
+msgstr "Richtlinienautoren können ihre Fähigkeiten, Werkzeuge und Best Practices wiederverwenden. Richtlinien sind \"traditionelle\" Programme, die wiederverwendbare Blöcke (reguläre Bibliotheken) haben können. Sie können sie linten und testen und sie in aktuelle CI- und CD-Workflows einbinden."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:90
+#, no-wrap
+msgid "Policy distribution"
+msgstr "Richtlinienverteilung"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:95
+msgid ""
+"You can serve {short-project-name} policies using a standard web server or, "
+"better, you can publish them in an OCI compliant registry as https://"
+"github.com/opencontainers/artifacts[OCI artifacts]."
+msgstr "Sie können {short-project-name}-Richtlinien über einen Standard-Webserver bereitstellen oder, noch besser, sie in einer OCI-konformen Registry als https://github.com/opencontainers/artifacts[OCI-Artefakte] veröffentlichen."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:98
+#, no-wrap
+msgid "Vendor neutrality"
+msgstr "Herstellerneutralität"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:103
+msgid ""
+"{short-project-name} is a link:https://contribute.cncf.io/maintainers/"
+"community/vendor-neutrality/[vendor neutral] project as defined by the CNCF."
+msgstr "{short-project-name} ist ein link:https://contribute.cncf.io/maintainers/community/vendor-neutrality/[herstellerneutrales] Projekt, wie von der CNCF definiert."
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:2
+#, no-wrap
+msgid "Quick start"
+msgstr "Schnellstart"
+
+#. type: delimited block +
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:18
+#, no-wrap
+msgid ""
+"<head>\n"
+"<script async src=\"https://artifacthub.io/artifacthub-widget.js\"></script>\n"
+"</head>\n"
+msgstr "<head>\n<script async src=\"https://artifacthub.io/artifacthub-widget.js\"></script>\n</head>\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:21
+msgid "The {project-name} stack comprises:"
+msgstr "Der {project-name}-Stack umfasst:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:24
+msgid ""
+"One or more {cluster-admission-policy} resources: this defines policies for "
+"Kubernetes clusters."
+msgstr "Eine oder mehrere {cluster-admission-policy}-Ressourcen: Dies definiert Richtlinien für Kubernetes-Cluster."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:28
+msgid ""
+"One or more {policy-server} resources: representing a deployment of a {short-"
+"project-name} `PolicyServer`. The {short-project-name} `PolicyServer` loads "
+"and evaluates your administrator's policies."
+msgstr "Eine oder mehrere {policy-server}-Ressourcen: die eine Bereitstellung eines {short-project-name}-`PolicyServer` darstellen. Der {short-project-name}-`PolicyServer` lädt und bewertet die Richtlinien Ihres Administrators."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:29
+msgid ""
+"One or more {admission-policy} resources: policies for a defined namespace."
+msgstr "Eine oder mehrere {admission-policy}-Ressourcen: Richtlinien für einen definierten Namespace."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:32
+msgid ""
+"A deployment of a `kubewarden-controller`: this controller monitors the "
+"{cluster-admission-policy} resources and interacts with the {short-project-"
+"name} {policy-server} components."
+msgstr "Eine Bereitstellung eines `kubewarden-controller`: Dieser Controller überwacht die {cluster-admission-policy}-Ressourcen und interagiert mit den {short-project-name}-{policy-server}-Komponenten."
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:38
+msgid ""
+"{short-project-name} describes its Kubernetes Custom Resource Definitions "
+"(CRDs)  xref:reference/CRDs.adoc[here]."
+msgstr "{short-project-name} beschreibt seine Kubernetes Custom Resource Definitions (CRDs) xref:reference/CRDs.adoc[hier]."
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:42
+msgid ""
+"{short-project-name} CRDs mentioned in this tutorial and in the rest of "
+"documentation have short names, which are easier to use. These are the short "
+"names for the CRDs:"
+msgstr "Die in diesem Tutorial und im Rest der Dokumentation erwähnten {short-project-name}-CRDs haben kurze Namen, die einfacher zu verwenden sind. Dies sind die kurzen Namen für die CRDs:"
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:62
+#, no-wrap
+msgid ""
+"| Resource | shortName\n"
+"\n"
+"| AdmissionPolicies\n"
+"| *ap*\n"
+"\n"
+"| ClusterAdmissionPolicies\n"
+"| *cap*\n"
+"\n"
+"| AdmissionPolicyGroups\n"
+"| *apg*\n"
+"\n"
+"| ClusterAdmissionPolicyGroups\n"
+"| *capg*\n"
+"\n"
+"| PolicyServers\n"
+"| *ps*\n"
+"\n"
+msgstr "| Ressource | Kurzname\n\n| AdmissionPolicies\n| *ap*\n\n| ClusterAdmissionPolicies\n| *cap*\n\n| AdmissionPolicyGroups\n| *apg*\n\n| ClusterAdmissionPolicyGroups\n| *capg*\n\n| PolicyServers\n| *ps*\n\n"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:67
+#, no-wrap
+msgid "Installation"
+msgstr "Installation"
+
+#. type: Block title
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:70
+#, no-wrap
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:80
+msgid ""
+"You can retrieve {short-project-name} policies from the GitHub container "
+"registry at https://ghcr.io. You need authentication to use the repository "
+"with the {short-project-name} CLI, a {gh-pat-url}[GitHub personal access "
+"token] (PAT). Their documentation guides you through creating one if you "
+"haven't already done so.  Then you authenticate with a command like:"
+msgstr "Sie können {short-project-name}-Richtlinien aus der GitHub-Container-Registry unter https://ghcr.io abrufen. Sie benötigen eine Authentifizierung, um das Repository mit der {short-project-name}-CLI zu verwenden, ein {gh-pat-url}[persönliches GitHub-Zugriffstoken] (PAT). Ihre Dokumentation führt Sie durch die Erstellung eines solchen, falls Sie dies noch nicht getan haben. Dann authentifizieren Sie sich mit einem Befehl wie:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:84
+#, no-wrap
+msgid "echo $PAT | docker login ghcr.io --username <my-gh-username> --password-stdin\n"
+msgstr "echo $PAT | docker login ghcr.io --username <mein-gh-benutzername> --password-stdin\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:90
+msgid "Deploy the {short-project-name} stack using `helm` charts as follows:"
+msgstr "Stellen Sie den {short-project-name}-Stack mit `helm`-Charts wie folgt bereit:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:94
+#, no-wrap
+msgid "helm repo add kubewarden https://charts.kubewarden.io\n"
+msgstr "helm repo add kubewarden https://charts.kubewarden.io\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:99
+#, no-wrap
+msgid "helm repo update kubewarden\n"
+msgstr "helm repo update kubewarden\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:103
+msgid ""
+"Install the following Helm charts in the `kubewarden` namespace in your "
+"Kubernetes cluster:"
+msgstr "Installieren Sie die folgenden Helm-Charts im `kubewarden`-Namespace in Ihrem Kubernetes-Cluster:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:107
+msgid ""
+"`kubewarden-crds`, which registers the {cluster-admission-policy}, "
+"{admission-policy} and {policy-server} Custom Resource Definitions. Also, "
+"the {report} Custom Resource Definitions used by the audit scanner."
+msgstr "`kubewarden-crds`, das die Custom Resource Definitions {cluster-admission-policy}, {admission-policy} und {policy-server} registriert. Außerdem die vom Audit-Scanner verwendeten {report} Custom Resource Definitions."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:109
+msgid ""
+"`kubewarden-controller`, which installs the {short-project-name} controller "
+"and the audit scanner"
+msgstr "`kubewarden-controller`, der den {short-project-name}-Controller und den Audit-Scanner installiert"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:115
+msgid ""
+"If you need to disable the audit scanner component check the audit scanner "
+"installation xref:howtos/audit-scanner.adoc[documentation page]."
+msgstr "Wenn Sie die Audit-Scanner-Komponente deaktivieren müssen, lesen Sie die xref:howtos/audit-scanner.adoc[Dokumentationsseite] zur Installation des Audit-Scanners."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:121
+msgid ""
+"`kubewarden-defaults`, which creates a `PolicyServer` resource named "
+"`default`. It can also install a set of recommended policies to secure your "
+"cluster by enforcing well known best practices."
+msgstr "`kubewarden-defaults`, das eine `PolicyServer`-Ressource mit dem Namen `default` erstellt. Es kann auch eine Reihe empfohlener Richtlinien installieren, um Ihren Cluster durch die Durchsetzung bekannter Best Practices zu sichern."
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:125
+#, no-wrap
+msgid "helm install --wait -n kubewarden --create-namespace kubewarden-crds kubewarden/kubewarden-crds\n"
+msgstr "helm install --wait -n kubewarden --create-namespace kubewarden-crds kubewarden/kubewarden-crds\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:130
+#, no-wrap
+msgid "helm install --wait -n kubewarden kubewarden-controller kubewarden/kubewarden-controller\n"
+msgstr "helm install --wait -n kubewarden kubewarden-controller kubewarden/kubewarden-controller\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:135
+#, no-wrap
+msgid "helm install --wait -n kubewarden kubewarden-defaults kubewarden/kubewarden-defaults\n"
+msgstr "helm install --wait -n kubewarden kubewarden-defaults kubewarden/kubewarden-defaults\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:145
+msgid ""
+"Since https://github.com/kubewarden/kubewarden-controller/releases/tag/"
+"v0.4.0[`v0.4.0`], a `PolicyServer` resource named `default` isn't created "
+"using the `kubewarden-controller` chart. Now a Helm chart called `kubewarden-"
+"defaults`, installs the default policy server."
+msgstr "Seit https://github.com/kubewarden/kubewarden-controller/releases/tag/v0.4.0[`v0.4.0`] wird eine `PolicyServer`-Ressource mit dem Namen `default` nicht mehr mit dem `kubewarden-controller`-Chart erstellt. Jetzt installiert ein Helm-Chart namens `kubewarden-defaults` den Standard-Richtlinienserver."
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:155
+msgid ""
+"This means that if not using the latest version of the `kubewarden-"
+"controller` while upgrading or deleting, your default policy server isn't "
+"upgraded or deleted. So, you might run into issues if you try to install the "
+"`kubewarden-defaults` with conflicting information, for example, the same "
+"policy server name. To install future upgrades of the `kubewarden-defaults` "
+"Helm chart remove the existing `PolicyServer` resource created by the "
+"`kubewarden-controller` before installing the new chart. Now you can update "
+"your policy server using Helm upgrades without resource conflicts. When you "
+"remove the `PolicyServer`, you remove all the policies bound to it as well."
+msgstr "Dies bedeutet, dass Ihr Standard-Richtlinienserver nicht aktualisiert oder gelöscht wird, wenn Sie beim Aktualisieren oder Löschen nicht die neueste Version des `kubewarden-controller` verwenden. Sie könnten also auf Probleme stoßen, wenn Sie versuchen, `kubewarden-defaults` mit widersprüchlichen Informationen zu installieren, z. B. mit demselben Richtlinienservernamen. Um zukünftige Upgrades des `kubewarden-defaults`-Helm-Charts zu installieren, entfernen Sie die vorhandene `PolicyServer`-Ressource, die vom `kubewarden-controller` erstellt wurde, bevor Sie das neue Chart installieren. Jetzt können Sie Ihren Richtlinienserver mit Helm-Upgrades ohne Ressourcenkonflikte aktualisieren. Wenn Sie den `PolicyServer` entfernen, entfernen Sie auch alle daran gebundenen Richtlinien."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:162
+msgid ""
+"The default configuration values are sufficient for most deployments. The "
+"https://charts.kubewarden.io/#configuration[documentation] describes all the "
+"options."
+msgstr "Die Standardkonfigurationswerte sind für die meisten Bereitstellungen ausreichend. Die https://charts.kubewarden.io/#configuration[Dokumentation] beschreibt alle Optionen."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:163
+#, no-wrap
+msgid "Main components"
+msgstr "Hauptkomponenten"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:166
+msgid "{short-project-name} has three main components which you interact with:"
+msgstr "{short-project-name} hat drei Hauptkomponenten, mit denen Sie interagieren:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:168
+msgid "The {policy-server}"
+msgstr "Der {policy-server}"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:169
+msgid "The {cluster-admission-policy}"
+msgstr "Die {cluster-admission-policy}"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:170
+msgid "The {admission-policy}"
+msgstr "Die {admission-policy}"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:171
+#, no-wrap
+msgid "`PolicyServer`"
+msgstr "`PolicyServer`"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:175
+msgid ""
+"The `kubewarden-controller` manages a {short-project-name} `PolicyServer`. "
+"You can deploy multiple {policy-server}s in the same Kubernetes cluster."
+msgstr "Der `kubewarden-controller` verwaltet einen {short-project-name}-`PolicyServer`. Sie können mehrere {policy-server} im selben Kubernetes-Cluster bereitstellen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:178
+msgid ""
+"A `PolicyServer` validates incoming requests by executing {short-project-"
+"name} policies against them."
+msgstr "Ein `PolicyServer` validiert eingehende Anfragen, indem er {short-project-name}-Richtlinien dagegen ausführt."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:180
+msgid "This is the default `PolicyServer` configuration:"
+msgstr "Dies ist die Standardkonfiguration des `PolicyServer`:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:194
+#, no-wrap
+msgid ""
+"apiVersion: policies.kubewarden.io/v1\n"
+"kind: PolicyServer\n"
+"metadata:\n"
+"  name: reserved-instance-for-tenant-a\n"
+"spec:\n"
+"  image: ghcr.io/kubewarden/policy-server:v1.3.0\n"
+"  replicas: 2\n"
+"  serviceAccountName: ~\n"
+"  env:\n"
+"    - name: KUBEWARDEN_LOG_LEVEL\n"
+"      value: debug\n"
+msgstr "apiVersion: policies.kubewarden.io/v1\nkind: PolicyServer\nmetadata:\n  name: reserved-instance-for-tenant-a\nspec:\n  image: ghcr.io/kubewarden/policy-server:v1.3.0\n  replicas: 2\n  serviceAccountName: ~\n  env:\n    - name: KUBEWARDEN_LOG_LEVEL\n      value: debug\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:202
+msgid ""
+"Check the https://github.com/kubewarden/policy-server/pkgs/container/policy-"
+"server[latest released `PolicyServer` version] and change the tag to match."
+msgstr "Überprüfen Sie die https://github.com/kubewarden/policy-server/pkgs/container/policy-server[neueste veröffentlichte `PolicyServer`-Version] und ändern Sie das Tag entsprechend."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:206
+msgid "Overview of the attributes of the `PolicyServer` resource:"
+msgstr "Übersicht über die Attribute der `PolicyServer`-Ressource:"
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:232
+#, no-wrap
+msgid ""
+"| Required | Placeholder | Description\n"
+"\n"
+"| Y\n"
+"| `image`\n"
+"| The name of the container image\n"
+"\n"
+"| Y\n"
+"| `replicas`\n"
+"| The number of desired instances\n"
+"\n"
+"| N\n"
+"| `serviceAccountName`\n"
+"| The name of the `ServiceAccount` to use for the `PolicyServer` deployment. If\n"
+"  there is no provided value, the default `ServiceAccount` from the installation namespace, of `kubewarden-controller`, gets used.\n"
+"\n"
+"| N\n"
+"| `env`\n"
+"| The list of environment variables\n"
+"\n"
+"| N\n"
+"| `annotations`\n"
+"| The list of annotations\n"
+"\n"
+msgstr "| Erforderlich | Platzhalter | Beschreibung\n\n| Y\n| `image`\n| Der Name des Container-Images\n\n| Y\n| `replicas`\n| Die Anzahl der gewünschten Instanzen\n\n| N\n| `serviceAccountName`\n| Der Name des `ServiceAccount`, der für die `PolicyServer`-Bereitstellung verwendet werden soll. Wenn\n  kein Wert angegeben ist, wird der Standard-`ServiceAccount` aus dem Installations-Namespace von `kubewarden-controller` verwendet.\n\n| N\n| `env`\n| Die Liste der Umgebungsvariablen\n\n| N\n| `annotations`\n| Die Liste der Anmerkungen\n\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:236
+msgid ""
+"Changing any of these attributes causes a `PolicyServer` deployment with the "
+"new configuration."
+msgstr "Das Ändern eines dieser Attribute bewirkt eine `PolicyServer`-Bereitstellung mit der neuen Konfiguration."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:237
+#: docs/version-1.30/modules/en/pages/glossary.adoc:23
+#, no-wrap
+msgid "ClusterAdmissionPolicy"
+msgstr "ClusterAdmissionPolicy"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:241
+msgid ""
+"The {cluster-admission-policy} resource is the core of the {short-project-"
+"name} stack. It defines how policies evaluate requests."
+msgstr "Die {cluster-admission-policy}-Ressource ist der Kern des {short-project-name}-Stacks. Sie definiert, wie Richtlinien Anfragen auswerten."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:248
+msgid ""
+"Enforcing policies is the most common operation which a Kubernetes "
+"administrator performs. You can declare as many policies as you want, each "
+"targets one or more Kubernetes resources (that is, `pods`, `Custom Resource` "
+"and others). You also specify the type of operations applied to targeted "
+"resources. The operations available are `CREATE`, `UPDATE`, `DELETE` and "
+"`CONNECT`."
+msgstr "Das Erzwingen von Richtlinien ist die häufigste Operation, die ein Kubernetes-Administrator durchführt. Sie können so viele Richtlinien deklarieren, wie Sie möchten, jede zielt auf eine oder mehrere Kubernetes-Ressourcen (d. h. `pods`, `Custom Resource` und andere). Sie geben auch die Art der Operationen an, die auf die Zielressourcen angewendet werden. Die verfügbaren Operationen sind `CREATE`, `UPDATE`, `DELETE` und `CONNECT`."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:250
+msgid "Default {cluster-admission-policy} configuration:"
+msgstr "Standardkonfiguration der {cluster-admission-policy}:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:273
+#, no-wrap
+msgid ""
+"apiVersion: policies.kubewarden.io/v1\n"
+"kind: ClusterAdmissionPolicy\n"
+"metadata:\n"
+"  name: psp-capabilities\n"
+"spec:\n"
+"  policyServer: reserved-instance-for-tenant-a\n"
+"  module: registry://ghcr.io/kubewarden/policies/psp-capabilities:v0.1.9\n"
+"  rules:\n"
+"    - apiGroups: [\"\"]\n"
+"      apiVersions: [\"v1\"]\n"
+"      resources: [\"pods\"]\n"
+"      operations:\n"
+"        - CREATE\n"
+"        - UPDATE\n"
+"  mutating: true\n"
+"  settings:\n"
+"    allowed_capabilities:\n"
+"      - CHOWN\n"
+"    required_drop_capabilities:\n"
+"      - NET_ADMIN\n"
+msgstr "apiVersion: policies.kubewarden.io/v1\nkind: ClusterAdmissionPolicy\nmetadata:\n  name: psp-capabilities\nspec:\n  policyServer: reserved-instance-for-tenant-a\n  module: registry://ghcr.io/kubewarden/policies/psp-capabilities:v0.1.9\n  rules:\n    - apiGroups: [\"\"]\n      apiVersions: [\"v1\"]\n      resources: [\"pods\"]\n      operations:\n        - CREATE\n        - UPDATE\n  mutating: true\n  settings:\n    allowed_capabilities:\n      - CHOWN\n    required_drop_capabilities:\n      - NET_ADMIN\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:276
+msgid "Overview of the attributes of the {cluster-admission-policy} resource:"
+msgstr "Übersicht über die Attribute der {cluster-admission-policy}-Ressource:"
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:338
+#, no-wrap
+msgid ""
+"| Required | Placeholder | Description\n"
+"\n"
+"| N\n"
+"| `policy-server`\n"
+"| Identifies an existing `PolicyServer` object. Only\n"
+"  this `PolicyServer` instance serves the policy. The policy server named `default` serves a {cluster-admission-policy} without an explicit `PolicyServer`.\n"
+"\n"
+"| Y\n"
+"| `module`\n"
+"| The location of the {short-project-name} policy. The following schemes are allowed:\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `registry`: Policy download from an\n"
+"    https://github.com/opencontainers/artifacts[OCI artifacts] compliant\n"
+"    container registry. Example: `registry://<OCI registry/policy URL>`\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `http`, `https`: Policy download from a regular HTTP(s) server.\n"
+"    Example: `\\https://<website/policy URL>`\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `file`: Load the policy from a file in the computer file system.\n"
+"    Example: `\\file:///<policy WASM binary full path>`\n"
+"\n"
+"| Y\n"
+"| `resources`\n"
+"| The Kubernetes resources evaluated by the policy\n"
+"\n"
+"| Y\n"
+"| `operations`\n"
+"| What operations for the previously given types should be forwarded to this\n"
+"  admission policy by the API server for evaluation.\n"
+"\n"
+"| Y\n"
+"| `mutating`\n"
+"| Set this boolean value `true` for policies that can mutate\n"
+"  incoming requests\n"
+"\n"
+"| N\n"
+"| `settings`\n"
+"| A free-form object that contains the policy configuration values\n"
+"\n"
+"| N\n"
+"| `failurePolicy`\n"
+"| The action to take if the request evaluated by a policy results in an error.\n"
+"  The following options are allowed:\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `Ignore`: ignore an error calling the webhook and the API request\n"
+"    continues.\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `Fail`: an error calling the webhook causes the admission to fail\n"
+"    and API request rejection.\n"
+msgstr "| Erforderlich | Platzhalter | Beschreibung\n\n| N\n| `policy-server`\n| Identifiziert ein vorhandenes `PolicyServer`-Objekt. Nur\n  diese `PolicyServer`-Instanz bedient die Richtlinie. Der Richtlinienserver mit dem Namen `default` bedient eine {cluster-admission-policy} ohne einen expliziten `PolicyServer`.\n\n| Y\n| `module`\n| Der Speicherort der {short-project-name}-Richtlinie. Die folgenden Schemata sind erlaubt:\n\n| N\n|\n| - `registry`: Richtlinien-Download von einer\n    https://github.com/opencontainers/artifacts[OCI-Artefakte]-konformen\n    Container-Registry. Beispiel: `registry://<OCI-Registry/Richtlinien-URL>`\n\n| N\n|\n| - `http`, `https`: Richtlinien-Download von einem regulären HTTP(s)-Server.\n    Beispiel: `\\https://<Website/Richtlinien-URL>`\n\n| N\n|\n| - `file`: Laden Sie die Richtlinie aus einer Datei im Dateisystem des Computers.\n    Beispiel: `\\file:///<vollständiger Pfad zur WASM-Binärdatei der Richtlinie>`\n\n| Y\n| `resources`\n| Die von der Richtlinie ausgewerteten Kubernetes-Ressourcen\n\n| Y\n| `operations`\n| Welche Operationen für die zuvor angegebenen Typen an diese\n  Zulassungsrichtlinie vom API-Server zur Auswertung weitergeleitet werden sollen.\n\n| Y\n| `mutating`\n| Setzen Sie diesen booleschen Wert auf `true` für Richtlinien, die\n  eingehende Anfragen mutieren können\n\n| N\n| `settings`\n| Ein Freiformobjekt, das die Konfigurationswerte der Richtlinie enthält\n\n| N\n| `failurePolicy`\n| Die Aktion, die ausgeführt werden soll, wenn die von einer Richtlinie ausgewertete Anfrage zu einem Fehler führt.\n  Die folgenden Optionen sind erlaubt:\n\n| N\n|\n| - `Ignore`: Ignorieren Sie einen Fehler beim Aufrufen des Webhooks und die API-Anfrage\n    wird fortgesetzt.\n\n| N\n|\n| - `Fail`: Ein Fehler beim Aufrufen des Webhooks führt zum Scheitern der Zulassung\n    und zur Ablehnung der API-Anfrage.\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:347
+msgid ""
+"The controller registers the {cluster-admission-policy} resources `*` "
+"webhook `scope`. This means that registered webhooks forward all requests "
+"matching the given `resources` and `operations`, either namespaced or "
+"cluster-wide resources."
+msgstr "Der Controller registriert den `scope` des Webhooks `*` der {cluster-admission-policy}-Ressourcen. Dies bedeutet, dass registrierte Webhooks alle Anfragen weiterleiten, die den angegebenen `resources` und `operations` entsprechen, entweder namespaced oder clusterweite Ressourcen."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:351
+#: docs/version-1.30/modules/en/pages/glossary.adoc:16
+#, no-wrap
+msgid "AdmissionPolicy"
+msgstr "AdmissionPolicy"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:357
+msgid ""
+"{admission-policy} is a namespace-wide resource. The policy processes only "
+"the requests that are targeting the Namespace with the {admission-policy} "
+"defined.  Other than that, there are no functional differences between the "
+"{admission-policy} and {cluster-admission-policy} resources."
+msgstr "{admission-policy} ist eine Namespace-weite Ressource. Die Richtlinie verarbeitet nur die Anfragen, die auf den Namespace mit der definierten {admission-policy} abzielen. Ansonsten gibt es keine funktionalen Unterschiede zwischen den Ressourcen {admission-policy} und {cluster-admission-policy}."
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:364
+msgid ""
+"{admission-policy} requires Kubernetes 1.21.0 or greater. This is because "
+"{short-project-name} uses the `kubernetes.io/metadata.name` label, "
+"introduced in Kubernetes 1.21.0"
+msgstr "{admission-policy} erfordert Kubernetes 1.21.0 oder höher. Dies liegt daran, dass {short-project-name} das in Kubernetes 1.21.0 eingeführte Label `kubernetes.io/metadata.name` verwendet."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:368
+msgid ""
+"The complete documentation of these Custom Resources is https://github.com/"
+"kubewarden/kubewarden-controller/blob/main/docs/crds/README.asciidoc[here] "
+"or on https://doc.crds.dev/github.com/kubewarden/kubewarden-"
+"controller[docs.crds.dev]."
+msgstr "Die vollständige Dokumentation dieser Custom Resources finden Sie https://github.com/kubewarden/kubewarden-controller/blob/main/docs/crds/README.asciidoc[hier] oder auf https://doc.crds.dev/github.com/kubewarden/kubewarden-controller[docs.crds.dev]."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:369
+#, no-wrap
+msgid "Example: Enforce your first policy"
+msgstr "Beispiel: Erzwingen Sie Ihre erste Richtlinie"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:373
+msgid ""
+"We will use the https://github.com/kubewarden/pod-privileged-policy[`pod-"
+"privileged`] policy.  We want to prevent the creation of privileged "
+"containers inside our Kubernetes cluster by enforcing this policy."
+msgstr "Wir werden die https://github.com/kubewarden/pod-privileged-policy[`pod-privileged`]-Richtlinie verwenden. Wir möchten die Erstellung von privilegierten Containern in unserem Kubernetes-Cluster verhindern, indem wir diese Richtlinie durchsetzen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:375
+msgid "Let's define a {cluster-admission-policy} to do that:"
+msgstr "Definieren wir dazu eine {cluster-admission-policy}:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:394
+#, no-wrap
+msgid ""
+"kubectl apply -f - <<EOF\n"
+"apiVersion: policies.kubewarden.io/v1\n"
+"kind: ClusterAdmissionPolicy\n"
+"metadata:\n"
+"  name: privileged-pods\n"
+"spec:\n"
+"  module: registry://ghcr.io/kubewarden/policies/pod-privileged:v0.2.2\n"
+"  rules:\n"
+"  - apiGroups: [\"\"]\n"
+"    apiVersions: [\"v1\"]\n"
+"    resources: [\"pods\"]\n"
+"    operations:\n"
+"    - CREATE\n"
+"    - UPDATE\n"
+"  mutating: false\n"
+"EOF\n"
+msgstr "kubectl apply -f - <<EOF\napiVersion: policies.kubewarden.io/v1\nkind: ClusterAdmissionPolicy\nmetadata:\n  name: privileged-pods\nspec:\n  module: registry://ghcr.io/kubewarden/policies/pod-privileged:v0.2.2\n  rules:\n  - apiGroups: [\"\"]\n    apiVersions: [\"v1\"]\n    resources: [\"pods\"]\n    operations:\n    - CREATE\n    - UPDATE\n  mutating: false\nEOF\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:397
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:463
+msgid "This produces the following output:"
+msgstr "Dies erzeugt die folgende Ausgabe:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:401
+#, no-wrap
+msgid "clusteradmissionpolicy.policies.kubewarden.io/privileged-pods created\n"
+msgstr "clusteradmissionpolicy.policies.kubewarden.io/privileged-pods created\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:407
+msgid ""
+"After instantiating a {cluster-admission-policy}, the status becomes "
+"`pending`, and it forces a rollout of the targeted `PolicyServer`. In the "
+"example, it's the `PolicyServer` named `default`. You can monitor the "
+"rollout by running the following command:"
+msgstr "Nach der Instanziierung einer {cluster-admission-policy} wird der Status `pending`, und es wird ein Rollout des Ziel-`PolicyServer` erzwungen. Im Beispiel ist es der `PolicyServer` mit dem Namen `default`. Sie können den Rollout überwachen, indem Sie den folgenden Befehl ausführen:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:411
+#, no-wrap
+msgid "kubectl get clusteradmissionpolicy.policies.kubewarden.io/privileged-pods\n"
+msgstr "kubectl get clusteradmissionpolicy.policies.kubewarden.io/privileged-pods\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:414
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:436
+msgid "You should see the following output:"
+msgstr "Sie sollten die folgende Ausgabe sehen:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:419
+#, no-wrap
+msgid ""
+"NAME              POLICY SERVER   MUTATING   STATUS\n"
+"privileged-pods   default         false      pending\n"
+msgstr "NAME              POLICY SERVER   MUTATING   STATUS\nprivileged-pods   default         false      pending\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:425
+msgid ""
+"Once the new policy is ready, the `kubewarden-controller` registers a "
+"https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/"
+"#validatingwebhookconfiguration-v1-admissionregistration-k8s-"
+"io[ValidatingWebhookConfiguration] object to serve it."
+msgstr "Sobald die neue Richtlinie bereit ist, registriert der `kubewarden-controller` ein https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/#validatingwebhookconfiguration-v1-admissionregistration-k8s-io[ValidatingWebhookConfiguration]-Objekt, um sie zu bedienen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:429
+msgid ""
+"The {cluster-admission-policy} status becomes `active` once the Deployment "
+"completes for every `PolicyServer` instance. Show {validating-webhook-"
+"configuration}s with the following command:"
+msgstr "Der Status der {cluster-admission-policy} wird `active`, sobald die Bereitstellung für jede `PolicyServer`-Instanz abgeschlossen ist. Zeigen Sie {validating-webhook-configuration}s mit dem folgenden Befehl an:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:433
+#, no-wrap
+msgid "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l kubewarden\n"
+msgstr "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l kubewarden\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:441
+#, no-wrap
+msgid ""
+"NAME                          WEBHOOKS   AGE\n"
+"clusterwide-privileged-pods   1          9s\n"
+msgstr "NAME                          WEBHOOKS   AGE\nclusterwide-privileged-pods   1          9s\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:445
+msgid ""
+"Once the {cluster-admission-policy} is active and the {validating-webhook-"
+"configuration} registers, you can test the policy."
+msgstr "Sobald die {cluster-admission-policy} aktiv ist und die {validating-webhook-configuration} registriert ist, können Sie die Richtlinie testen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:447
+msgid ""
+"First, you can create a Pod with a Container _not_ in `privileged` mode:"
+msgstr "Zuerst können Sie einen Pod mit einem Container erstellen, der _nicht_ im `privileged`-Modus ist:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:460
+#, no-wrap
+msgid ""
+"kubectl apply -f - <<EOF\n"
+"apiVersion: v1\n"
+"kind: Pod\n"
+"metadata:\n"
+"  name: unprivileged-pod\n"
+"spec:\n"
+"  containers:\n"
+"    - name: nginx\n"
+"      image: nginx:latest\n"
+"EOF\n"
+msgstr "kubectl apply -f - <<EOF\napiVersion: v1\nkind: Pod\nmetadata:\n  name: unprivileged-pod\nspec:\n  containers:\n    - name: nginx\n      image: nginx:latest\nEOF\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:467
+#, no-wrap
+msgid "pod/unprivileged-pod created\n"
+msgstr "pod/unprivileged-pod created\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:470
+msgid "The Pod is successfully created."
+msgstr "Der Pod wurde erfolgreich erstellt."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:472
+msgid ""
+"Now, you can create a Pod with at least one Container `privileged` flag:"
+msgstr "Jetzt können Sie einen Pod mit mindestens einem Container-`privileged`-Flag erstellen:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:487
+#, no-wrap
+msgid ""
+"kubectl apply -f - <<EOF\n"
+"apiVersion: v1\n"
+"kind: Pod\n"
+"metadata:\n"
+"  name: privileged-pod\n"
+"spec:\n"
+"  containers:\n"
+"    - name: nginx\n"
+"      image: nginx:latest\n"
+"      securityContext:\n"
+"          privileged: true\n"
+"EOF\n"
+msgstr "kubectl apply -f - <<EOF\napiVersion: v1\nkind: Pod\nmetadata:\n  name: privileged-pod\nspec:\n  containers:\n    - name: nginx\n      image: nginx:latest\n      securityContext:\n          privileged: true\nEOF\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:490
+msgid ""
+"The policy denies creation of the Pod and you should see the following "
+"message:"
+msgstr "Die Richtlinie verweigert die Erstellung des Pods und Sie sollten die folgende Meldung sehen:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:494
+#, no-wrap
+msgid "Error from server: error when creating \"STDIN\": admission webhook \"clusterwide-privileged-pods.kubewarden.admission\" denied the request: Privileged container is not allowed\n"
+msgstr "Error from server: error when creating \"STDIN\": admission webhook \"clusterwide-privileged-pods.kubewarden.admission\" denied the request: Privileged container is not allowed\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:503
+msgid ""
+"Both examples didn't define a `namespace`, which means the `default` "
+"namespace was the target. However, as you could see in the second example, "
+"the policy is still applied. As stated previously, this is due to the scope "
+"being cluster-wide and not targeting a specific namespace."
+msgstr "Beide Beispiele haben keinen `namespace` definiert, was bedeutet, dass der `default`-Namespace das Ziel war. Wie Sie jedoch im zweiten Beispiel sehen konnten, wird die Richtlinie immer noch angewendet. Wie bereits erwähnt, liegt dies daran, dass der Geltungsbereich clusterweit ist und nicht auf einen bestimmten Namespace abzielt."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:507
+#, no-wrap
+msgid "Uninstall"
+msgstr "Deinstallieren"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:511
+msgid ""
+"You can remove the resources created by uninstalling the `helm` charts as "
+"follows:"
+msgstr "Sie können die erstellten Ressourcen entfernen, indem Sie die `helm`-Charts wie folgt deinstallieren:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:515
+#, no-wrap
+msgid "helm uninstall --namespace kubewarden kubewarden-defaults\n"
+msgstr "helm uninstall --namespace kubewarden kubewarden-defaults\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:520
+#, no-wrap
+msgid "helm uninstall --namespace kubewarden kubewarden-controller\n"
+msgstr "helm uninstall --namespace kubewarden kubewarden-controller\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:525
+#, no-wrap
+msgid "helm uninstall --namespace kubewarden kubewarden-crds\n"
+msgstr "helm uninstall --namespace kubewarden kubewarden-crds\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:529
+msgid ""
+"After removal of the `helm` charts remove the Kubernetes namespace used to "
+"deploy the {short-project-name} stack:"
+msgstr "Nach dem Entfernen der `helm`-Charts entfernen Sie den Kubernetes-Namespace, der zur Bereitstellung des {short-project-name}-Stacks verwendet wurde:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:533
+#, no-wrap
+msgid "kubectl delete namespace kubewarden\n"
+msgstr "kubectl delete namespace kubewarden\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:542
+msgid ""
+"{short-project-name} contains a helm pre-delete hook that removes all "
+"`PolicyServer`s and `kubewarden-controller`s. Then the `kubewarden-"
+"controller` deletes all resources, so it's important that `kubewarden-"
+"controller` is running when helm uninstall executes."
+msgstr "{short-project-name} enthält einen Helm-Pre-Delete-Hook, der alle `PolicyServer`s und `kubewarden-controller`s entfernt. Dann löscht der `kubewarden-controller` alle Ressourcen, daher ist es wichtig, dass der `kubewarden-controller` läuft, wenn die Helm-Deinstallation ausgeführt wird."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:548
+msgid ""
+"{short-project-name} deletes {validating-webhook-configuration}s and "
+"{mutating-webhook-configuration}s. Check this with:"
+msgstr "{short-project-name} löscht {validating-webhook-configuration}s und {mutating-webhook-configuration}s. Überprüfen Sie dies mit:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:552
+#, no-wrap
+msgid "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+msgstr "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:557
+#, no-wrap
+msgid "kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+msgstr "kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:561
+msgid ""
+"If these resources aren't automatically removed, remove them manually using "
+"the following command:"
+msgstr "Wenn diese Ressourcen nicht automatisch entfernt werden, entfernen Sie sie manuell mit dem folgenden Befehl:"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:565
+#, no-wrap
+msgid "kubectl delete -l \"kubewarden\" validatingwebhookconfigurations.admissionregistration.k8s.io\n"
+msgstr "kubectl delete -l \"kubewarden\" validatingwebhookconfigurations.admissionregistration.k8s.io\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:570
+#, no-wrap
+msgid "kubectl delete -l \"kubewarden\" mutatingwebhookconfigurations.admissionregistration.k8s.io\n"
+msgstr "kubectl delete -l \"kubewarden\" mutatingwebhookconfigurations.admissionregistration.k8s.io\n"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:572
+#, no-wrap
+msgid "Wrapping up"
+msgstr "Zusammenfassung"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:577
+msgid ""
+"{cluster-admission-policy} is the core resource that a cluster operator has "
+"to manage. The `kubewarden-controller` module automatically takes care of "
+"the configuration for the rest of the resources needed to run the policies."
+msgstr "{cluster-admission-policy} ist die Kernressource, die ein Cluster-Betreiber verwalten muss. Das `kubewarden-controller`-Modul kümmert sich automatisch um die Konfiguration der restlichen Ressourcen, die zum Ausführen der Richtlinien benötigt werden."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:578
+#, no-wrap
+msgid "What's next?"
+msgstr "Was kommt als Nächstes?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:585
+msgid ""
+"Now, you are ready to deploy {short-project-name}! Have a look at the "
+"policies on https://artifacthub.io/packages/search?kind=13[artifacthub.io], "
+"on https://github.com/topics/kubewarden-policy[GitHub], or reuse existing "
+"Rego policies as shown in the xref:tutorials/writing-policies/rego/01-intro-"
+"rego.adoc[following chapters]."
+msgstr "Jetzt sind Sie bereit, {short-project-name} bereitzustellen! Werfen Sie einen Blick auf die Richtlinien auf https://artifacthub.io/packages/search?kind=13[artifacthub.io], auf https://github.com/topics/kubewarden-policy[GitHub], oder verwenden Sie vorhandene Rego-Richtlinien wieder, wie in den xref:tutorials/writing-policies/rego/01-intro-rego.adoc[folgenden Kapiteln] gezeigt."
+
+#. type: Block title
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:586
+#, no-wrap
+msgid "Full list of available policies on ArtifactHub"
+msgstr "Vollständige Liste der verfügbaren Richtlinien auf ArtifactHub"
+
+#. type: delimited block +
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:593
+#, no-wrap
+msgid "<div class=\"artifacthub-widget-group\" data-url=\"https://artifacthub.io/packages/search?kind=13&sort=relevance&page=1\" data-theme=\"light\" data-header=\"false\" data-stars=\"false\" data-color=\"#fe7c3f\" data-responsive=\"true\" data-loading=\"true\"></div>\n"
+msgstr "<div class=\"artifacthub-widget-group\" data-url=\"https://artifacthub.io/packages/search?kind=13&sort=relevance&page=1\" data-theme=\"light\" data-header=\"false\" data-stars=\"false\" data-color=\"#fe7c3f\" data-responsive=\"true\" data-loading=\"true\"></div>\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/organization.adoc:2
+#, no-wrap
+msgid "Documentation organization"
+msgstr "Dokumentationsorganisation"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:14
+msgid "{project-name} organizes project documentation as follows:"
+msgstr "{project-name} organisiert die Projektdokumentation wie folgt:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:16
+msgid "xref:/introduction.adoc[Introduction]"
+msgstr "xref:/introduction.adoc[Einführung]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:17
+msgid "xref:/quick-start.adoc[Quick start]"
+msgstr "xref:/quick-start.adoc[Schnellstart]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:18
+msgid "_Tutorials_—learning through examples."
+msgstr "_Tutorials_—Lernen durch Beispiele."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:19
+msgid "_Explanations_—underlying concepts."
+msgstr "_Erklärungen_—zugrunde liegende Konzepte."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:20
+msgid "_How-tos_—getting {short-project-name} tasks done."
+msgstr "_Anleitungen_—Erledigung von {short-project-name}-Aufgaben."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:21
+msgid "_Reference_"
+msgstr "_Referenz_"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:22
+msgid "Organization—this page"
+msgstr "Organisation—diese Seite"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:23
+msgid "xref:/personas.adoc[Personas]—who is {short-project-name} for?"
+msgstr "xref:/personas.adoc[Personas]—für wen ist {short-project-name}?"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:24
+msgid "xref:/disclosure.adoc[Security]"
+msgstr "xref:/disclosure.adoc[Sicherheit]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:25
+msgid "xref:/glossary.adoc[Glossary]"
+msgstr "xref:/glossary.adoc[Glossar]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:30
+msgid ""
+"Most of the material is in the four sections, _Tutorials_, _Explanations_, "
+"_How-tos_, and _Reference_. There may be overlap as the sections are not "
+"mutually exclusive. The {short-project-name} project tries to follow the "
+"link:https://diataxis.fr/[Diátaxis] documentation framework."
+msgstr "Der größte Teil des Materials befindet sich in den vier Abschnitten _Tutorials_, _Erklärungen_, _Anleitungen_ und _Referenz_. Es kann zu Überschneidungen kommen, da sich die Abschnitte nicht gegenseitig ausschließen. Das {short-project-name}-Projekt versucht, dem link:https://diataxis.fr/[Diátaxis]-Dokumentationsframework zu folgen."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:31
+#, no-wrap
+msgid "Navigation"
+msgstr "Navigation"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:36
+msgid ""
+"The left hand contents menu always indicates your current document "
+"location.  The right hand sections menu shows the current page sections. "
+"There is also a 'breadcrumbs' feature at the top of the main content panel "
+"on each page."
+msgstr "Das Inhaltsmenü auf der linken Seite zeigt immer Ihren aktuellen Dokumentenstandort an. Das Abschnittsmenü auf der rechten Seite zeigt die Abschnitte der aktuellen Seite. Oben im Hauptinhaltsbereich jeder Seite befindet sich außerdem eine 'Breadcrumbs'-Funktion."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:37
+#, no-wrap
+msgid "Search"
+msgstr "Suche"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:40
+msgid "A search box facility is in the header panel of each page."
+msgstr "Im Kopfbereich jeder Seite befindet sich ein Suchfeld."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:41
+#, no-wrap
+msgid "Editing"
+msgstr "Bearbeiten"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:44
+msgid "A link to the page source on GitHub is at the bottom of each page."
+msgstr "Ein Link zum Quellcode der Seite auf GitHub befindet sich am Ende jeder Seite."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:45
+#, no-wrap
+msgid "Other resources"
+msgstr "Andere Ressourcen"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:48
+msgid "Also maintained are:"
+msgstr "Außerdem werden gepflegt:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:50
+msgid "link:https://github.com/kubewarden/rfc[RFCs] for the project."
+msgstr "link:https://github.com/kubewarden/rfc[RFCs] für das Projekt."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:52
+msgid ""
+"A series of link:https://www.kubewarden.io/blog/[blog posts] related to "
+"{community-name} releases."
+msgstr "Eine Reihe von link:https://www.kubewarden.io/blog/[Blog-Beiträgen] im Zusammenhang mit {community-name}-Veröffentlichungen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:53
+msgid ""
+"Items related to the link:https://github.com/kubewarden/community[community] "
+"management of {community-name}."
+msgstr "Elemente im Zusammenhang mit der link:https://github.com/kubewarden/community[Community]-Verwaltung von {community-name}."
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:2
+#, no-wrap
+msgid "Security disclosure"
+msgstr "Sicherheitsoffenlegung"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:20
+msgid ""
+"The {project-name} team appreciates investigative work on security "
+"vulnerabilities carried out by well-intentioned, ethical security "
+"researchers. {short-project-name} follows the practice of [responsible "
+"disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) to best "
+"protect {short-project-name}'s user base from the impact of security issues. "
+"On {short-project-name}'s side, this means:"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:22
+msgid "{short-project-name} responds to security incidents on priority."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:23
+msgid ""
+"{short-project-name} releases fixes for issues as soon as is practical, "
+"prioritizing by risk."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:25
+msgid ""
+"{short-project-name} always transparently lets the community know about any "
+"incident that affects them."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:31
+msgid ""
+"If you have found a security vulnerability in {short-project-name}, the "
+"easiest way to report a vulnerability is through the https://github.com/"
+"kubewarden/community/security/advisories[Security tab on GitHub]. This "
+"mechanism allows maintainers to communicate privately with you, and you "
+"don't need to encrypt your messages."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:36
+msgid ""
+"Alternatively, you can disclose it responsibly by emailing xref:mailto:cncf-"
+"kubewarden-maintainers@lists.cncf.io.adoc[cncf-kubewarden-"
+"maintainers@lists.cncf.io] in an *unencrypted* message. Please don't discuss "
+"potential vulnerabilities in public without validating with us first."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:40
+msgid ""
+"You can also come talk in our https://kubernetes.slack.com/archives/"
+"C03L52JRAFM[slack-room] on the Kubernetes Slack server."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:42
+msgid "On receipt the security team:"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:45
+msgid ""
+"Reviews the report, verifies the vulnerability and responds with "
+"confirmation and/or further information requests."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:47
+msgid ""
+"After addressing the reported security bug, {short-project-name} notifies "
+"the Researcher, who is then welcome to optionally disclose publicly."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:50
+msgid ""
+"Please, refer to the https://github.com/kubewarden/community[community "
+"repository] to find more about the project Governance and Security Policy."
+msgstr ""
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/enterprise.adoc:2
+#, no-wrap
+msgid "Enterprise support"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/enterprise.adoc:14
+msgid "These organization(s) provide enterprise support for {project-name}:"
+msgstr ""
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/enterprise.adoc:21
+#, no-wrap
+msgid ""
+"| Organization | Offering\n"
+"\n"
+"| link:https://suse.com[SUSE]\n"
+"| SUSE provides complete {project-name} enterprise support with link:https://www.suse.com/products/rancher[SUSE® Rancher Prime].\n"
+msgstr "| Organisation | Angebot\n\n| link:https://suse.com[SUSE]\n| SUSE bietet vollständigen {project-name}-Unternehmens-Support mit link:https://www.suse.com/products/rancher[SUSE® Rancher Prime].\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/glossary.adoc:2
+#, no-wrap
+msgid "Glossary"
+msgstr "Glossar"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:14
+#, no-wrap
+msgid "A"
+msgstr "A"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:20
+msgid ""
+"A namespace-wide resource. The policy processes only those requests "
+"targeting the namespace in which the AdmissionPolicy is defined."
+msgstr "Eine Namespace-weite Ressource. Die Richtlinie verarbeitet nur Anfragen, die auf den Namespace abzielen, in dem die AdmissionPolicy definiert ist."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:21
+#, no-wrap
+msgid "C"
+msgstr "C"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:26
+msgid ""
+"An <<_admissionpolicy,AdmissionPolicy>> which targets cluster-wide resources."
+msgstr "Eine <<_admissionpolicy,AdmissionPolicy>>, die auf clusterweite Ressourcen abzielt."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:27
+#, no-wrap
+msgid "ClusterReport"
+msgstr "ClusterReport"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:31
+msgid ""
+"A <<_report,Report>> and a ClusterReport store results of policy scans. "
+"Which one is used, depends on the scope of the resource."
+msgstr "Ein <<_report,Report>> und ein ClusterReport speichern die Ergebnisse von Richtlinienscans. Welcher verwendet wird, hängt vom Geltungsbereich der Ressource ab."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:32
+#, no-wrap
+msgid "K"
+msgstr "K"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:34
+#, no-wrap
+msgid "kwctl"
+msgstr "kwctl"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:37
+msgid ""
+"A CLI tool to generate and test Kubernetes YAML files for policy deployment."
+msgstr "Ein CLI-Tool zum Generieren und Testen von Kubernetes-YAML-Dateien für die Richtlinienbereitstellung."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:38
+#, no-wrap
+msgid "M"
+msgstr "M"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:40
+#, no-wrap
+msgid "MutatingWebhookConfiguration"
+msgstr "MutatingWebhookConfiguration"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:47
+msgid ""
+"A https://kubernetes.io/docs/reference/access-authn-authz/extensible-"
+"admission-controllers/#what-are-admission-webhooks[Kubernetes resource] "
+"created by the {short-project-name} controller to let Kubernetes know where "
+"to send an `AdmissionReview`.  In other words, this is how a {short-project-"
+"name} controller informs Kubernetes where to find a resource mutating policy."
+msgstr "Eine https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes-Ressource], die vom {short-project-name}-Controller erstellt wurde, um Kubernetes mitzuteilen, wohin eine `AdmissionReview` gesendet werden soll. Mit anderen Worten, so informiert ein {short-project-name}-Controller Kubernetes, wo eine Ressourcen-mutierende Richtlinie zu finden ist."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:48
+#, no-wrap
+msgid "P"
+msgstr "P"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:50
+#, no-wrap
+msgid "Report"
+msgstr "Report"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:54
+msgid ""
+"A Report and a <<_clusterreport,ClusterReport>> store results of policy "
+"scans. Which one is used depends on the scope of the resource."
+msgstr "Ein Report und ein <<_clusterreport,ClusterReport>> speichern die Ergebnisse von Richtlinienscans. Welcher verwendet wird, hängt vom Geltungsbereich der Ressource ab."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:56
+#, no-wrap
+msgid "PolicyServer"
+msgstr "PolicyServer"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:59
+msgid ""
+"A PolicyServer validates incoming requests by executing {short-project-name} "
+"policies against requests."
+msgstr "Ein PolicyServer validiert eingehende Anfragen, indem er {short-project-name}-Richtlinien gegen Anfragen ausführt."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:60
+#, no-wrap
+msgid "V"
+msgstr "V"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:62
+#, no-wrap
+msgid "ValidatingWebhookConfiguration"
+msgstr "ValidatingWebhookConfiguration"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:68
+msgid ""
+"A https://kubernetes.io/docs/reference/access-authn-authz/extensible-"
+"admission-controllers/#what-are-admission-webhooks[Kubernetes resource] "
+"created by the {short-project-name} controller to let Kubernetes know where "
+"to send a `AdmissionReview`.  In other words, this is how {short-project-"
+"name} informs Kubernetes where to find a resource validating policy."
+msgstr "Eine https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes-Ressource], die vom {short-project-name}-Controller erstellt wurde, um Kubernetes mitzuteilen, wohin eine `AdmissionReview` gesendet werden soll. Mit anderen Worten, so informiert {short-project-name} Kubernetes, wo eine Ressourcen-validierende Richtlinie zu finden ist."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:69
+#, no-wrap
+msgid "W"
+msgstr "W"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:71
+#, no-wrap
+msgid "waPC"
+msgstr "waPC"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:74
+msgid "WebAssembly Procedure Calls. https://wapc.io."
+msgstr "WebAssembly Procedure Calls. https://wapc.io."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:75
+#, no-wrap
+msgid "WASI"
+msgstr "WASI"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:78
+msgid "WebAssembly System Interface. https://wasi.dev."
+msgstr "WebAssembly System Interface. https://wasi.dev."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:79
+#, no-wrap
+msgid "Wasm"
+msgstr "Wasm"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:83
+msgid ""
+"A binary instruction format for a stack-based virtual machine. Designed for "
+"web deployment. https://webassembly.org."
+msgstr "Ein binäres Befehlsformat für eine stackbasierte virtuelle Maschine. Konzipiert für den Web-Einsatz. https://webassembly.org."
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:84
+#, no-wrap
+msgid "Wasmtime"
+msgstr "Wasmtime"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:86
+msgid "A runtime for WebAssembly. https://wasmtime.dev."
+msgstr "Eine Laufzeitumgebung für WebAssembly. https://wasmtime.dev."
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/personas.adoc:2
+#, no-wrap
+msgid "Who is this project for? The personas."
+msgstr "Für wen ist dieses Projekt? Die Personas."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/personas.adoc:12
+msgid "## {project-name} personas"
+msgstr "## {project-name}-Personas"
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/personas.adoc:34
+#, no-wrap
+msgid ""
+"|Persona |Description\n"
+"\n"
+"|**Policy user**\n"
+"|Someone who takes a policy and uses it in a cluster. They deploy policies and observe results. They configure the policy settings but do not write the policy internal code (if there is any).\n"
+"\n"
+"|**Operator**\n"
+"|Someone operating {short-project-name} in a cluster. Installs and maintains {short-project-name}.\n"
+"\n"
+"|**Policy distributor**\n"
+"|Someone who has written a policy and wants to share it with others. They want the policy consumed by the “policy user” role. A distributor of {short-project-name} policies, to places such as ArtifactHub or private OCI repositories.\n"
+"\n"
+"|**Policy developer**\n"
+"|A person designing and writing policies for {short-project-name} for others to consume.\n"
+"\n"
+"|**Integrator**\n"
+"|Builds with, using, or on top of {short-project-name}. Perhaps a custom UI or a helper tool for generating policies.\n"
+"\n"
+"|**Developer**\n"
+"|A person working on the {short-project-name} product set. Building {short-project-name} itself.\n"
+msgstr "|Persona |Beschreibung\n\n|**Richtlinienbenutzer**\n|Jemand, der eine Richtlinie nimmt und sie in einem Cluster verwendet. Sie stellen Richtlinien bereit und beobachten die Ergebnisse. Sie konfigurieren die Richtlinieneinstellungen, schreiben aber nicht den internen Code der Richtlinie (falls vorhanden).\n\n|**Betreiber**\n|Jemand, der {short-project-name} in einem Cluster betreibt. Installiert und wartet {short-project-name}.\n\n|**Richtlinienverteiler**\n|Jemand, der eine Richtlinie geschrieben hat und sie mit anderen teilen möchte. Sie möchten, dass die Richtlinie von der Rolle „Richtlinienbenutzer“ konsumiert wird. Ein Verteiler von {short-project-name}-Richtlinien an Orte wie ArtifactHub oder private OCI-Repositories.\n\n|**Richtlinienentwickler**\n|Eine Person, die Richtlinien für {short-project-name} entwirft und schreibt, damit andere sie konsumieren können.\n\n|**Integrator**\n|Baut mit, unter Verwendung von oder auf {short-project-name} auf. Vielleicht eine benutzerdefinierte Benutzeroberfläche oder ein Hilfsprogramm zum Generieren von Richtlinien.\n\n|**Entwickler**\n|Eine Person, die am {short-project-name}-Produktsatz arbeitet. Baut {short-project-name} selbst.\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:2
+#, no-wrap
+msgid "{project-name} use cases"
+msgstr "{project-name}-Anwendungsfälle"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:14
+msgid ""
+"These are a few example use cases for {project-name}'s xref:/"
+"personas.adoc[personas]."
+msgstr "Dies sind einige Beispiel-Anwendungsfälle für die xref:/personas.adoc[Personas] von {project-name}."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:15
+#, no-wrap
+msgid "Case A: As a Kubernetes operator, I want to ensure my cluster is safe and compliant."
+msgstr "Fall A: Als Kubernetes-Betreiber möchte ich sicherstellen, dass mein Cluster sicher und konform ist."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:21
+msgid ""
+"I deploy {project-name} and its default configuration with its `kubewarden-"
+"defaults` Helm chart, in the `kubewarden` Namespace. This deploys a default "
+"PolicyServer and recommended ClusterAdmissionPolicies in the `kubewarden` "
+"namespace, solely under the control of the Kubernetes operator."
+msgstr "Ich stelle {project-name} und seine Standardkonfiguration mit seinem `kubewarden-defaults`-Helm-Chart im `kubewarden`-Namespace bereit. Dies stellt einen Standard-PolicyServer und empfohlene ClusterAdmissionPolicies im `kubewarden`-Namespace bereit, die ausschließlich unter der Kontrolle des Kubernetes-Betreibers stehen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:24
+msgid ""
+"As an operator, I can add more PolicyServers under a managed Namespace (such "
+"as `kubewarden`) to distribute load and fault tolerance."
+msgstr "Als Betreiber kann ich weitere PolicyServer unter einem verwalteten Namespace (wie `kubewarden`) hinzufügen, um die Last zu verteilen und die Fehlertoleranz zu erhöhen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:29
+msgid ""
+"Operators can deploy more ClusterAdmissionPolicies and "
+"ClusterAdmissionPolicyGroups. These check all the Kubernetes resources, for "
+"any type of operation (GET, CREATE, UPDATE, PATCH, DELETE, PROXY). This "
+"ensures operations into the cluster are safe and compliant."
+msgstr "Betreiber können weitere ClusterAdmissionPolicies und ClusterAdmissionPolicyGroups bereitstellen. Diese überprüfen alle Kubernetes-Ressourcen auf jede Art von Operation (GET, CREATE, UPDATE, PATCH, DELETE, PROXY). Dies stellt sicher, dass Operationen im Cluster sicher und konform sind."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:31
+msgid "These include:"
+msgstr "Dazu gehören:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:33
+msgid "security"
+msgstr "Sicherheit"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:34
+msgid "compliance (to industry standards or company regulations)"
+msgstr "Compliance (gegenüber Industriestandards oder Unternehmensvorschriften)"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:35
+msgid "resource optimization (via mutating policies)"
+msgstr "Ressourcenoptimierung (über mutierende Richtlinien)"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:36
+msgid ""
+"governance of Kubernetes environments (via labels and naming conventions)"
+msgstr "Governance von Kubernetes-Umgebungen (über Labels und Namenskonventionen)"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:37
+msgid "best practices"
+msgstr "Best Practices"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:38
+msgid "image verification"
+msgstr "Image-Verifizierung"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:45
+msgid ""
+"Security expectations change over time. Previously correct deployments in "
+"the cluster may no longer be so. Yet {short-project-name} has already "
+"accepted those operations in the cluster. In these situations, the operator "
+"can deploy the Audit Scanner feature, a CronJob that runs periodically and "
+"evaluates the existing resources in the cluster. This checks the cluster is "
+"safe and compliant even over time."
+msgstr "Die Sicherheitserwartungen ändern sich im Laufe der Zeit. Zuvor korrekte Bereitstellungen im Cluster sind möglicherweise nicht mehr korrekt. Dennoch hat {short-project-name} diese Operationen im Cluster bereits akzeptiert. In diesen Situationen kann der Betreiber die Audit-Scanner-Funktion bereitstellen, einen CronJob, der periodisch ausgeführt wird und die vorhandenen Ressourcen im Cluster auswertet. Dies überprüft, ob der Cluster auch im Laufe der Zeit sicher und konform ist."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:48
+msgid ""
+"The operator can configure policies in `monitor` mode instead of `protect` "
+"mode, to learn from the state of the cluster without blocking operations."
+msgstr "Der Betreiber kann Richtlinien im `monitor`-Modus anstelle des `protect`-Modus konfigurieren, um aus dem Zustand des Clusters zu lernen, ohne Operationen zu blockieren."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:51
+msgid ""
+"Operators can receive information from policies and the {short-project-name} "
+"stack by consuming logs and OpenTelemetry information for metrics and "
+"tracing."
+msgstr "Betreiber können Informationen von Richtlinien und dem {short-project-name}-Stack erhalten, indem sie Protokolle und OpenTelemetry-Informationen für Metriken und Tracing konsumieren."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:52
+#, no-wrap
+msgid "Case B: As a Kubernetes operator, I want to provide a framework to my Kubernetes users so they can self-service in their Namespaces."
+msgstr "Fall B: Als Kubernetes-Betreiber möchte ich meinen Kubernetes-Benutzern ein Framework zur Verfügung stellen, damit sie sich in ihren Namespaces selbst bedienen können."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:57
+msgid ""
+"As an operator, I deploy {short-project-name} as in Case A for a set of "
+"policies of my choosing. This provides me with a safe baseline in the "
+"cluster, that other users can't evade."
+msgstr "Als Betreiber stelle ich {short-project-name} wie in Fall A für eine Reihe von Richtlinien meiner Wahl bereit. Dies bietet mir eine sichere Basis im Cluster, die andere Benutzer nicht umgehen können."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:65
+msgid ""
+"As well as Case A, I have different personas per Namespaces: perhaps teams, "
+"team administrators, test deployments, and others. I allow each Namespace "
+"administrator to self-service by letting them deploy PolicyServers in their "
+"Namespace, along with namespaced AdmissionPolicies and "
+"AdmissionPolicyGroups.  This architecture means that they're in control of "
+"their PolicyServer and policies. The policies only apply to their Namespace, "
+"and they constrain resource usage to their Namespace."
+msgstr "Sowie Fall A habe ich verschiedene Personas pro Namespace: vielleicht Teams, Teamadministratoren, Testbereitstellungen und andere. Ich erlaube jedem Namespace-Administrator, sich selbst zu bedienen, indem ich ihnen erlaube, PolicyServer in ihrem Namespace zusammen mit namespaced AdmissionPolicies und AdmissionPolicyGroups bereitzustellen. Diese Architektur bedeutet, dass sie die Kontrolle über ihren PolicyServer und ihre Richtlinien haben. Die Richtlinien gelten nur für ihren Namespace und sie beschränken die Ressourcennutzung auf ihren Namespace."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:69
+msgid ""
+"It also permits the operator to segregate noisy tenants, reserving "
+"performant PolicyServers for those tenants and tasks that need high "
+"throughput and low latency, for example."
+msgstr "Es ermöglicht dem Betreiber auch, laute Mandanten zu trennen und leistungsstarke PolicyServer für jene Mandanten und Aufgaben zu reservieren, die beispielsweise einen hohen Durchsatz und eine geringe Latenz benötigen."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:70
+#, no-wrap
+msgid "Case C: As a policy author, I want to use the tools and languages that I know to write new policies."
+msgstr "Fall C: Als Richtlinienautor möchte ich die Werkzeuge und Sprachen verwenden, die ich kenne, um neue Richtlinien zu schreiben."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:76
+msgid ""
+"{short-project-name} achieves this by supporting any language that compiles "
+"to WebAssembly as possible target languages for policies. This means that "
+"policy authors can reuse their workflows (`git`, CI, editors, peer reviews, "
+"etc.), and tools: languages, language libraries, testing harnesses and "
+"frameworks, etc."
+msgstr "{short-project-name} erreicht dies, indem es jede Sprache unterstützt, die zu WebAssembly kompiliert, als mögliche Zielsprachen für Richtlinien. Dies bedeutet, dass Richtlinienautoren ihre Workflows (`git`, CI, Editoren, Peer-Reviews usw.) und Werkzeuge wiederverwenden können: Sprachen, Sprachbibliotheken, Test-Harnesse und Frameworks usw."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:82
+msgid ""
+"It permits re-using Domain Specific Languages (like Rego, CEL, Kyverno's "
+"YAML+macros) or general-purpose languages (like Go, Rust, C#, Javascript, "
+"any that compiles to Wasm). {short-project-name} provides xref:/tutorials/"
+"writing-policies/index.adoc[SDKs] for a few languages as first-class support."
+msgstr "Es ermöglicht die Wiederverwendung von domänenspezifischen Sprachen (wie Rego, CEL, Kyvernos YAML+Makros) oder Allzwecksprachen (wie Go, Rust, C#, Javascript, jede, die zu Wasm kompiliert). {short-project-name} bietet xref:/tutorials/writing-policies/index.adoc[SDKs] für einige Sprachen als erstklassige Unterstützung."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:87
+msgid ""
+"{short-project-name} policies can be simple or complex xref:/explanations/"
+"context-aware-policies.adoc[context-aware] policies.  Context-aware policies "
+"are also used to interface with separate workloads (for example, to obtain "
+"information from an image scanner long-running service)."
+msgstr "{short-project-name}-Richtlinien können einfache oder komplexe xref:/explanations/context-aware-policies.adoc[kontextbezogene] Richtlinien sein. Kontextbezogene Richtlinien werden auch verwendet, um mit separaten Workloads zu interagieren (z. B. um Informationen von einem langlebigen Image-Scanner-Dienst zu erhalten)."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:88
+#, no-wrap
+msgid "Case D: As a system integrator, I want to re-use {short-project-name} as part of my security and compliance solution."
+msgstr "Fall D: Als Systemintegrator möchte ich {short-project-name} als Teil meiner Sicherheits- und Compliance-Lösung wiederverwenden."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:92
+msgid ""
+"As a system integrator, I want to re-use {short-project-name}, and possibly "
+"re-use other solutions by including them in {short-project-name}."
+msgstr "Als Systemintegrator möchte ich {short-project-name} wiederverwenden und möglicherweise andere Lösungen wiederverwenden, indem ich sie in {short-project-name} einbeziehe."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:96
+msgid ""
+"As a system integrator, I can reuse parts of {short-project-name}. For "
+"example, the `policy-server`, to police resources, internal or external to "
+"the Kubernetes cluster via the xref:/howtos/raw-policies.adoc[\"raw "
+"policies\"] feature."
+msgstr "Als Systemintegrator kann ich Teile von {short-project-name} wiederverwenden. Zum Beispiel den `policy-server`, um Ressourcen innerhalb oder außerhalb des Kubernetes-Clusters über die xref:/howtos/raw-policies.adoc[\"rohe Richtlinien\"]-Funktion zu überwachen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:100
+msgid ""
+"System integrators can choose to deploy the `kubewarden-controller` or "
+"manage the CRDs on their own. They can choose to deploy or scale the Audit "
+"Scanner as needed."
+msgstr "Systemintegratoren können wählen, ob sie den `kubewarden-controller` bereitstellen oder die CRDs selbst verwalten möchten. Sie können wählen, ob sie den Audit-Scanner nach Bedarf bereitstellen oder skalieren möchten."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:104
+msgid ""
+"System integrators can create new components. For example, an image scanner, "
+"and interface with it via a context-aware policy, without having a "
+"monolithic implementation in a Kubernetes controller."
+msgstr "Systemintegratoren können neue Komponenten erstellen. Zum Beispiel einen Image-Scanner und über eine kontextbezogene Richtlinie damit interagieren, ohne eine monolithische Implementierung in einem Kubernetes-Controller zu haben."
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:105
+#, no-wrap
+msgid "Non-goals"
+msgstr "Nicht-Ziele"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:108
+msgid "{short-project-name} doesn't intend to:"
+msgstr "{short-project-name} beabsichtigt nicht:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:110
+msgid "Replace Kubernetes built-in security features, but complement them:"
+msgstr "Die integrierten Sicherheitsfunktionen von Kubernetes zu ersetzen, sondern sie zu ergänzen:"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:111
+msgid "{short-project-name} provides migration from PSPs."
+msgstr "{short-project-name} bietet eine Migration von PSPs."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:113
+msgid ""
+"You can re-use ValidatingAdmissionPolicies and CEL policies with {short-"
+"project-name}'s `cel-policy`."
+msgstr "Sie können ValidatingAdmissionPolicies und CEL-Richtlinien mit der `cel-policy` von {short-project-name} wiederverwenden."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:114
+msgid ""
+"{short-project-name} policies can be mutating, while Pod Security Admission "
+"cannot."
+msgstr "{short-project-name}-Richtlinien können mutierend sein, während Pod Security Admission dies nicht kann."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:116
+msgid ""
+"{short-project-name} policies benefit from the {short-project-name} stack "
+"features (audit scanner, telemetry, CRD management)."
+msgstr "{short-project-name}-Richtlinien profitieren von den Funktionen des {short-project-name}-Stacks (Audit-Scanner, Telemetrie, CRD-Management)."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:118
+msgid ""
+"Provide runtime security like intrusion detection or runtime container "
+"isolation."
+msgstr "Laufzeitsicherheit wie Einbruchserkennung oder Laufzeit-Container-Isolierung bereitzustellen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:119
+msgid "Provide host system protection of clusters."
+msgstr "Host-Systemschutz von Clustern bereitzustellen."
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:120
+msgid ""
+"Provide infinite policy execution flexibility. To prevent DoS attacks, "
+"policies' processing times are limited."
+msgstr "Unendliche Flexibilität bei der Richtlinienausführung bereitzustellen. Um DoS-Angriffe zu verhindern, sind die Verarbeitungszeiten der Richtlinien begrenzt."

@@ -1,0 +1,79 @@
+include::partial$variables.adoc[]
+= ¿Qué es {project-name}?
+:revdate: 2025-11-06
+:page-revdate: {revdate}
+:description: Introducing {project-name}, a SUSE® Rancher Prime product.
+:doc-persona: ["kubewarden-all"]
+:doc-topic: ["introduction"]
+:doc-type: ["explanation"]
+:keywords: ["kubewarden", "cncf", "cncf sandbox", "kubernetes", "admission policy manager"]
+:sidebar_label: Introduction
+:sidebar_position: 1
+:slug: /
+:current-version: {page-origin-branch}
+
+{project-name} es un motor de políticas de Kubernetes. Su objetivo es ser el motor de políticas universal para Kubernetes.
+
+{intro-paragraph}
+
+A continuación, un enlace a la descripción general de la documentación del producto Rancher:
+
+* xref:rancher-manager:es:/about-rancher/overview.adoc[Resumen]
+
+== ¿Cómo ayuda {project-name}?
+
+{short-project-name} ofrece flexibilidad para la admisión y aplicación de políticas en un entorno de Kubernetes.
+
+=== Beneficios y valor
+
+- Use cualquier lenguaje de programación que genere binarios de https://webassembly.org[WebAssembly] para escribir sus políticas.
+- WebAssembly permite la compatibilidad de políticas entre procesadores y sistemas operativos.
+- Reutilización de políticas de otros motores de políticas sin necesidad de reescribirlas.
+- Distribuya políticas utilizando mecanismos estándar y seguros, como los registros compatibles con https://opencontainers.org[OCI].
+- La aplicación de políticas en la admisión garantiza que solo se ejecuten cargas de trabajo conformes.
+- El escáner de auditoría de {short-project-name} comprueba activa y continuamente la aplicación de las políticas a lo largo del tiempo.
+- Verifique las políticas utilizando las herramientas y prácticas de https://slsa.dev[SLSA] (Supply Chain Levels for Software Artifacts).
+- {project-name} proporciona un enfoque integral para la gestión de políticas de admisión.
+- La pertenencia a la CNCF y una comunidad y un ecosistema de código abierto en crecimiento ayudan a {short-project-name} con la transparencia, la colaboración y la mejora.
+
+=== Casos de uso
+
+- Refuerzo de la seguridad. Por ejemplo, aplicar políticas que restrinjan los privilegios de los contenedores, aplicar políticas de red o bloquear los registros de imágenes no seguros.
+- Auditoría de cumplimiento. Garantizar que las cargas de trabajo cumplen las normas y mejores prácticas organizativas o reglamentarias.
+- Optimización de recursos. Aplicar límites y cuotas de recursos.
+
+Hay más documentación sobre casos de uso en la página xref:use-cases.adoc[casos de uso].
+
+== ¿Es nuevo en {short-project-name}?
+
+Si es nuevo en el proyecto {short-project-name}, empiece con la xref:quick-start.adoc[guía de inicio rápido] y la página de xref:explanations/architecture.adoc[arquitectura]. A partir de ahí, dependerá de sus intereses. Para los desarrolladores de políticas, hay secciones específicas de cada lenguaje en los tutoriales. Para los integradores y administradores, hay una sección de 'guías prácticas'. La sección de explicaciones contiene material de fondo útil. También hay un xref:glossary.adoc[glosario].
+
+== ¿Qué es WebAssembly?
+
+Como se indica en el https://webassembly.org/[sitio web oficial de WebAssembly]:
+
+____
+WebAssembly (abreviado Wasm) es un formato de instrucción binario para una máquina virtual basada en pila. Wasm está diseñado como un destino de compilación portátil para lenguajes de programación, lo que permite su despliegue en la web para aplicaciones de cliente y servidor.
+____
+
+Wasm se concibió originalmente como una "extensión" del navegador. Sin embargo, la comunidad de WebAssembly está trabajando para permitir la ejecución de código Wasm fuera de los navegadores.
+
+== ¿Por qué usar WebAssembly?
+
+Los usuarios pueden escribir políticas de Kubernetes utilizando su lenguaje de programación favorito, siempre que su cadena de herramientas pueda generar binarios Wasm.
+
+Los módulos Wasm son portátiles, una vez construidos pueden ejecutarse en cualquier tipo de arquitectura de procesador y sistema operativo. Por ejemplo, una política desarrollada y construida en Apple Silicon puede ejecutarse en AMD64/Intel64 Linux sin conversión.
+
+Los autores de políticas pueden reutilizar sus habilidades, herramientas y mejores prácticas. Las políticas son programas "tradicionales" que pueden tener bloques reutilizables (bibliotecas regulares). Puede hacer linting y probarlas y puede conectarlas a los flujos de trabajo de CI y CD actuales.
+
+== Distribución de políticas
+
+Puede servir las políticas de {short-project-name} utilizando un servidor web estándar o, mejor aún, puede publicarlas en un registro compatible con OCI como https://github.com/opencontainers/artifacts[artefactos OCI].
+
+ifeval::["{build-type}" == "community"]
+
+== Neutralidad del proveedor
+
+{short-project-name} es un proyecto link:https://contribute.cncf.io/maintainers/community/vendor-neutrality/[neutral con respecto a los proveedores] tal y como lo define la CNCF.
+
+endif::[]

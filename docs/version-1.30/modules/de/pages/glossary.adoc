@@ -1,0 +1,75 @@
+include::partial$variables.adoc[]
+= Glossar
+:revdate: 2025-11-06
+:page-revdate: {revdate}
+:description: {project-name} glossary
+:doc-persona: ["kubewarden-all"]
+:doc-topic: ["glossary"]
+:doc-type: ["explanation"]
+:keywords: ["kubewarden", "glossary"]
+:sidebar_label: Glossary
+:sidebar_position: 90
+:current-version: {page-origin-branch}
+
+== A
+
+=== AdmissionPolicy
+
+Eine Namespace-weite Ressource. Die Richtlinie verarbeitet nur Anfragen, die auf den Namespace abzielen, in dem die AdmissionPolicy definiert ist.
+
+== C
+
+=== ClusterAdmissionPolicy
+
+Eine <<_admissionpolicy,AdmissionPolicy>>, die auf clusterweite Ressourcen abzielt.
+
+=== ClusterReport
+
+Ein <<_report,Report>> und ein ClusterReport speichern die Ergebnisse von Richtlinienscans. Welcher verwendet wird, hängt vom Geltungsbereich der Ressource ab.
+
+== K
+
+=== kwctl
+
+Ein CLI-Tool zum Generieren und Testen von Kubernetes-YAML-Dateien für die Richtlinienbereitstellung.
+
+== M
+
+=== MutatingWebhookConfiguration
+
+Eine https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes-Ressource], die vom {short-project-name}-Controller erstellt wurde, um Kubernetes mitzuteilen, wohin eine `AdmissionReview` gesendet werden soll. Mit anderen Worten, so informiert ein {short-project-name}-Controller Kubernetes, wo eine Ressourcen-mutierende Richtlinie zu finden ist.
+
+== P
+
+=== Report
+
+Ein Report und ein <<_clusterreport,ClusterReport>> speichern die Ergebnisse von Richtlinienscans. Welcher verwendet wird, hängt vom Geltungsbereich der Ressource ab.
+
+[#_policy_server]
+=== PolicyServer
+
+Ein PolicyServer validiert eingehende Anfragen, indem er {short-project-name}-Richtlinien gegen Anfragen ausführt.
+
+== V
+
+=== ValidatingWebhookConfiguration
+
+Eine https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes-Ressource], die vom {short-project-name}-Controller erstellt wurde, um Kubernetes mitzuteilen, wohin eine `AdmissionReview` gesendet werden soll. Mit anderen Worten, so informiert {short-project-name} Kubernetes, wo eine Ressourcen-validierende Richtlinie zu finden ist.
+
+== W
+
+=== waPC
+
+WebAssembly Procedure Calls. https://wapc.io.
+
+=== WASI
+
+WebAssembly System Interface. https://wasi.dev.
+
+=== Wasm
+
+Ein binäres Befehlsformat für eine stackbasierte virtuelle Maschine. Konzipiert für den Web-Einsatz. https://webassembly.org.
+
+=== Wasmtime
+
+Eine Laufzeitumgebung für WebAssembly. https://wasmtime.dev.

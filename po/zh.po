@@ -1,0 +1,1838 @@
+# Chinese translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-06 17:15+0100\n"
+"PO-Revision-Date: 2024-07-15 10:00+0000\n"
+"Last-Translator: Gemini Code Assist\n"
+"Language-Team: none\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/introduction.adoc:2
+#, no-wrap
+msgid "What is {project-name}?"
+msgstr "什么是 {project-name}？"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:17
+msgid ""
+"{project-name} is a Kubernetes Policy Engine.  It aims to be the Universal "
+"Policy Engine for Kubernetes."
+msgstr "{project-name} 是一个 Kubernetes 策略引擎。它的目标是成为 Kubernetes 的通用策略引擎。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:19
+msgid "{intro-paragraph}"
+msgstr "{intro-paragraph}"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:21
+msgid "Now here is a link into rancher-product-docs Overview:"
+msgstr "现在这里有一个指向 rancher-product-docs 概述的链接："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:23
+msgid "xref:rancher-manager:en:/about-rancher/overview.adoc[Overview]"
+msgstr "xref:rancher-manager:zh:/about-rancher/overview.adoc[概述]"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:24
+#, no-wrap
+msgid "How does {project-name} help?"
+msgstr "{project-name} 有何帮助？"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:28
+msgid ""
+"{short-project-name} offers flexibility for policy admission and enforcement "
+"in a Kubernetes environment."
+msgstr "{short-project-name} 为 Kubernetes 环境中的策略准入和执行提供了灵活性。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/introduction.adoc:29
+#, no-wrap
+msgid "Benefits and value"
+msgstr "优势和价值"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:32
+msgid ""
+"Use any programming language that generates https://"
+"webassembly.org[WebAssembly] binaries to write your policies."
+msgstr "使用任何能够生成 https://webassembly.org[WebAssembly] 二进制文件的编程语言来编写您的策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:33
+msgid ""
+"WebAssembly enables policy compatibility across processors and operating "
+"systems."
+msgstr "WebAssembly 实现了跨处理器和操作系统的策略兼容性。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:34
+msgid ""
+"Reuse of policies from other policy engines without the need for rewriting "
+"them."
+msgstr "重用来自其他策略引擎的策略，而无需重写它们。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:35
+msgid ""
+"Distribute policies using standard and secure mechanisms such as https://"
+"opencontainers.org[OCI] compliant registries."
+msgstr "使用标准和安全的机制（例如 https://opencontainers.org[OCI] 兼容的注册中心）分发策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:36
+msgid "Policy enforcement at admission ensures only compliant workloads run."
+msgstr "在准入时强制执行策略可确保只运行合规的工作负载。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:37
+msgid ""
+"The {short-project-name} audit scanner actively and continuously checks "
+"policy enforcement over time."
+msgstr "{short-project-name} 审计扫描器会随着时间的推移主动并持续地检查策略执行情况。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:38
+msgid ""
+"Verify policies using https://slsa.dev[SLSA] (Supply Chain Levels for "
+"Software Artifacts) tools and practices."
+msgstr "使用 https://slsa.dev[SLSA]（软件工件供应链级别）工具和实践来验证策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:39
+msgid ""
+"{project-name} provides a comprehensive approach to admission policy "
+"management."
+msgstr "{project-name} 提供了一种全面的准入策略管理方法。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:40
+msgid ""
+"CNCF membership and a growing open source community and ecosystem help "
+"{short-project-name} with transparency, collaboration and improvement."
+msgstr "CNCF 成员资格以及不断壮大的开源社区和生态系统可帮助 {short-project-name} 实现透明、协作和改进。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/introduction.adoc:41
+#, no-wrap
+msgid "Use cases"
+msgstr "使用案例"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:45
+msgid ""
+"Security hardening. For example, enforce policies restricting container "
+"privileges, enforce network policies, or block insecure image registries."
+msgstr "安全加固。例如，强制执行限制容器权限的策略、强制执行网络策略或阻止不安全的镜像注册中心。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:47
+msgid ""
+"Compliance auditing. Ensure workloads comply with organizational or "
+"regulatory standards and best practices."
+msgstr "合规性审计。确保工作负载符合组织或法规标准和最佳实践。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:48
+msgid "Resource optimization. Enforce resource limits and quotas."
+msgstr "资源优化。强制执行资源限制和配额。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:51
+msgid ""
+"There is further documentation of use cases on the xref:use-cases.adoc[use "
+"cases] page."
+msgstr "有关使用案例的更多文档，请参阅 xref:use-cases.adoc[使用案例] 页面。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:52
+#, no-wrap
+msgid "New to {short-project-name}?"
+msgstr "初次接触 {short-project-name}？"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:60
+msgid ""
+"If new to the {short-project-name} project start with the xref:quick-"
+"start.adoc[Quick start guide] and the xref:explanations/"
+"architecture.adoc[architecture] page.  Then it depends where your interests "
+"take you. For policy developers there are language specific sections in the "
+"tutorials. For integrators and administrators there is a 'how-tos' section. "
+"The explanations section contains useful background material. There is also "
+"a xref:glossary.adoc[glossary]."
+msgstr "如果您是 {short-project-name} 项目的新手，请从 xref:quick-start.adoc[快速入门指南] 和 xref:explanations/architecture.adoc[架构] 页面开始。然后，这取决于您的兴趣所在。对于策略开发人员，教程中有特定于语言的部分。对于集成商和管理员，有一个“操作方法”部分。解释部分包含有用的背景材料。还有一个 xref:glossary.adoc[词汇表]。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:61
+#, no-wrap
+msgid "What is WebAssembly?"
+msgstr "什么是 WebAssembly？"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:64
+msgid "As stated on https://webassembly.org/[WebAssembly's official website]:"
+msgstr "正如 https://webassembly.org/[WebAssembly 官方网站] 所述："
+
+#. type: delimited block _
+#: docs/version-1.30/modules/en/pages/introduction.adoc:70
+msgid ""
+"WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-"
+"based virtual machine. Wasm is designed as a portable compilation target for "
+"programming languages, enabling deployment on the web for client and server "
+"applications."
+msgstr "WebAssembly（缩写为 Wasm）是一种用于基于堆栈的虚拟机的二进制指令格式。Wasm 被设计为编程语言的可移植编译目标，支持在 Web 上部署客户端和服务器应用程序。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:75
+msgid ""
+"Wasm was originally conceived as a browser \"extension\". However, the "
+"WebAssembly community is engaged in efforts to allow the execution of Wasm "
+"code outside browsers."
+msgstr "Wasm 最初被构想为浏览器“扩展”。然而，WebAssembly 社区正在努力允许在浏览器之外执行 Wasm 代码。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:76
+#, no-wrap
+msgid "Why use WebAssembly?"
+msgstr "为何使用 WebAssembly？"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:81
+msgid ""
+"Users can write Kubernetes policies using their favorite programming "
+"language, provided its toolchain can generate Wasm binaries."
+msgstr "用户可以使用他们喜欢的编程语言编写 Kubernetes 策略，前提是其工具链可以生成 Wasm 二进制文件。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:85
+msgid ""
+"Wasm modules are portable, once built they can run on any kind of processor "
+"architecture and operating system. For example, a policy developed and built "
+"on Apple Silicon can run on AMD64/Intel64 Linux without conversion."
+msgstr "Wasm 模块是可移植的，一旦构建，它们就可以在任何类型的处理器架构和操作系统上运行。例如，在 Apple Silicon 上开发和构建的策略无需转换即可在 AMD64/Intel64 Linux 上运行。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:89
+msgid ""
+"Policy authors can reuse their skills, tools and best practices. Policies "
+"are \"traditional\" programs that can have reusable blocks (regular "
+"libraries). You can lint and test them and you can plug them into current CI "
+"and CD workflows."
+msgstr "策略作者可以重用他们的技能、工具和最佳实践。策略是“传统”程序，可以有可重用的块（常规库）。您可以对它们进行 lint 和测试，还可以将它们插入当前的 CI 和 CD 工作流中。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:90
+#, no-wrap
+msgid "Policy distribution"
+msgstr "策略分发"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:95
+msgid ""
+"You can serve {short-project-name} policies using a standard web server or, "
+"better, you can publish them in an OCI compliant registry as https://"
+"github.com/opencontainers/artifacts[OCI artifacts]."
+msgstr "您可以使用标准 Web 服务器为 {short-project-name} 策略提供服务，或者，更好的是，您可以将它们作为 https://github.com/opencontainers/artifacts[OCI 工件] 发布在 OCI 兼容的注册中心中。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/introduction.adoc:98
+#, no-wrap
+msgid "Vendor neutrality"
+msgstr "供应商中立"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/introduction.adoc:103
+msgid ""
+"{short-project-name} is a link:https://contribute.cncf.io/maintainers/"
+"community/vendor-neutrality/[vendor neutral] project as defined by the CNCF."
+msgstr "{short-project-name} 是由 CNCF 定义的 link:https://contribute.cncf.io/maintainers/community/vendor-neutrality/[供应商中立] 项目。"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:2
+#, no-wrap
+msgid "Quick start"
+msgstr "快速入门"
+
+#. type: delimited block +
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:18
+#, no-wrap
+msgid ""
+"<head>\n"
+"<script async src=\"https://artifacthub.io/artifacthub-widget.js\"></script>\n"
+"</head>\n"
+msgstr "<head>\n<script async src=\"https://artifacthub.io/artifacthub-widget.js\"></script>\n</head>\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:21
+msgid "The {project-name} stack comprises:"
+msgstr "{project-name} 堆栈包括："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:24
+msgid ""
+"One or more {cluster-admission-policy} resources: this defines policies for "
+"Kubernetes clusters."
+msgstr "一个或多个 {cluster-admission-policy} 资源：这为 Kubernetes 集群定义了策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:28
+msgid ""
+"One or more {policy-server} resources: representing a deployment of a {short-"
+"project-name} `PolicyServer`. The {short-project-name} `PolicyServer` loads "
+"and evaluates your administrator's policies."
+msgstr "一个或多个 {policy-server} 资源：表示 {short-project-name} `PolicyServer` 的部署。{short-project-name} `PolicyServer` 加载并评估您的管理员策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:29
+msgid ""
+"One or more {admission-policy} resources: policies for a defined namespace."
+msgstr "一个或多个 {admission-policy} 资源：为定义的命名空间制定的策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:32
+msgid ""
+"A deployment of a `kubewarden-controller`: this controller monitors the "
+"{cluster-admission-policy} resources and interacts with the {short-project-"
+"name} {policy-server} components."
+msgstr "一个 `kubewarden-controller` 的部署：此控制器监控 {cluster-admission-policy} 资源并与 {short-project-name} {policy-server} 组件交互。"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:38
+msgid ""
+"{short-project-name} describes its Kubernetes Custom Resource Definitions "
+"(CRDs)  xref:reference/CRDs.adoc[here]."
+msgstr "{short-project-name} 在 xref:reference/CRDs.adoc[此处] 描述了其 Kubernetes 自定义资源定义 (CRD)。"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:42
+msgid ""
+"{short-project-name} CRDs mentioned in this tutorial and in the rest of "
+"documentation have short names, which are easier to use. These are the short "
+"names for the CRDs:"
+msgstr "本教程和其余文档中提到的 {short-project-name} CRD 都有易于使用的简称。以下是 CRD 的简称："
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:62
+#, no-wrap
+msgid ""
+"| Resource | shortName\n"
+"\n"
+"| AdmissionPolicies\n"
+"| *ap*\n"
+"\n"
+"| ClusterAdmissionPolicies\n"
+"| *cap*\n"
+"\n"
+"| AdmissionPolicyGroups\n"
+"| *apg*\n"
+"\n"
+"| ClusterAdmissionPolicyGroups\n"
+"| *capg*\n"
+"\n"
+"| PolicyServers\n"
+"| *ps*\n"
+"\n"
+msgstr "| 资源 | 简称\n\n| AdmissionPolicies\n| *ap*\n\n| ClusterAdmissionPolicies\n| *cap*\n\n| AdmissionPolicyGroups\n| *apg*\n\n| ClusterAdmissionPolicyGroups\n| *capg*\n\n| PolicyServers\n| *ps*\n\n"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:67
+#, no-wrap
+msgid "Installation"
+msgstr "安装"
+
+#. type: Block title
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:70
+#, no-wrap
+msgid "Authentication"
+msgstr ""
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:80
+msgid ""
+"You can retrieve {short-project-name} policies from the GitHub container "
+"registry at https://ghcr.io. You need authentication to use the repository "
+"with the {short-project-name} CLI, a {gh-pat-url}[GitHub personal access "
+"token] (PAT). Their documentation guides you through creating one if you "
+"haven't already done so.  Then you authenticate with a command like:"
+msgstr "您可以从位于 https://ghcr.io 的 GitHub 容器注册中心检索 {short-project-name} 策略。您需要身份验证才能将存储库与 {short-project-name} CLI 一起使用，即 {gh-pat-url}[GitHub 个人访问令牌] (PAT)。如果您还没有创建，他们的文档会指导您创建一个。然后您可以使用如下命令进行身份验证："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:84
+#, no-wrap
+msgid "echo $PAT | docker login ghcr.io --username <my-gh-username> --password-stdin\n"
+msgstr "echo $PAT | docker login ghcr.io --username <我的-gh-用户名> --password-stdin\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:90
+msgid "Deploy the {short-project-name} stack using `helm` charts as follows:"
+msgstr "使用 `helm` chart 部署 {short-project-name} 堆栈，如下所示："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:94
+#, no-wrap
+msgid "helm repo add kubewarden https://charts.kubewarden.io\n"
+msgstr "helm repo add kubewarden https://charts.kubewarden.io\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:99
+#, no-wrap
+msgid "helm repo update kubewarden\n"
+msgstr "helm repo update kubewarden\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:103
+msgid ""
+"Install the following Helm charts in the `kubewarden` namespace in your "
+"Kubernetes cluster:"
+msgstr "在您的 Kubernetes 集群的 `kubewarden` 命名空间中安装以下 Helm chart："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:107
+msgid ""
+"`kubewarden-crds`, which registers the {cluster-admission-policy}, "
+"{admission-policy} and {policy-server} Custom Resource Definitions. Also, "
+"the {report} Custom Resource Definitions used by the audit scanner."
+msgstr "`kubewarden-crds`，它注册 {cluster-admission-policy}、{admission-policy} 和 {policy-server} 自定义资源定义。此外，还有审计扫描器使用的 {report} 自定义资源定义。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:109
+msgid ""
+"`kubewarden-controller`, which installs the {short-project-name} controller "
+"and the audit scanner"
+msgstr "`kubewarden-controller`，它安装 {short-project-name} 控制器和审计扫描器"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:115
+msgid ""
+"If you need to disable the audit scanner component check the audit scanner "
+"installation xref:howtos/audit-scanner.adoc[documentation page]."
+msgstr "如果您需要禁用审计扫描器组件，请查看审计扫描器安装 xref:howtos/audit-scanner.adoc[文档页面]。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:121
+msgid ""
+"`kubewarden-defaults`, which creates a `PolicyServer` resource named "
+"`default`. It can also install a set of recommended policies to secure your "
+"cluster by enforcing well known best practices."
+msgstr "`kubewarden-defaults`，它创建一个名为 `default` 的 `PolicyServer` 资源。它还可以安装一组推荐的策略，通过强制执行众所周知的最佳实践来保护您的集群。"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:125
+#, no-wrap
+msgid "helm install --wait -n kubewarden --create-namespace kubewarden-crds kubewarden/kubewarden-crds\n"
+msgstr "helm install --wait -n kubewarden --create-namespace kubewarden-crds kubewarden/kubewarden-crds\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:130
+#, no-wrap
+msgid "helm install --wait -n kubewarden kubewarden-controller kubewarden/kubewarden-controller\n"
+msgstr "helm install --wait -n kubewarden kubewarden-controller kubewarden/kubewarden-controller\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:135
+#, no-wrap
+msgid "helm install --wait -n kubewarden kubewarden-defaults kubewarden/kubewarden-defaults\n"
+msgstr "helm install --wait -n kubewarden kubewarden-defaults kubewarden/kubewarden-defaults\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:145
+msgid ""
+"Since https://github.com/kubewarden/kubewarden-controller/releases/tag/"
+"v0.4.0[`v0.4.0`], a `PolicyServer` resource named `default` isn't created "
+"using the `kubewarden-controller` chart. Now a Helm chart called `kubewarden-"
+"defaults`, installs the default policy server."
+msgstr "从 https://github.com/kubewarden/kubewarden-controller/releases/tag/v0.4.0[`v0.4.0`] 开始，不再使用 `kubewarden-controller` chart 创建名为 `default` 的 `PolicyServer` 资源。现在，一个名为 `kubewarden-defaults` 的 Helm chart 会安装默认的策略服务器。"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:155
+msgid ""
+"This means that if not using the latest version of the `kubewarden-"
+"controller` while upgrading or deleting, your default policy server isn't "
+"upgraded or deleted. So, you might run into issues if you try to install the "
+"`kubewarden-defaults` with conflicting information, for example, the same "
+"policy server name. To install future upgrades of the `kubewarden-defaults` "
+"Helm chart remove the existing `PolicyServer` resource created by the "
+"`kubewarden-controller` before installing the new chart. Now you can update "
+"your policy server using Helm upgrades without resource conflicts. When you "
+"remove the `PolicyServer`, you remove all the policies bound to it as well."
+msgstr "这意味着，如果在升级或删除时未使用最新版本的 `kubewarden-controller`，您的默认策略服务器将不会被升级或删除。因此，如果您尝试使用冲突的信息（例如，相同的策略服务器名称）安装 `kubewarden-defaults`，您可能会遇到问题。要安装 `kubewarden-defaults` Helm chart 的未来升级，请在安装新 chart 之前删除由 `kubewarden-controller` 创建的现有 `PolicyServer` 资源。现在，您可以使用 Helm 升级来更新您的策略服务器，而不会出现资源冲突。当您删除 `PolicyServer` 时，您也会删除所有绑定到它的策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:162
+msgid ""
+"The default configuration values are sufficient for most deployments. The "
+"https://charts.kubewarden.io/#configuration[documentation] describes all the "
+"options."
+msgstr "默认配置值足以满足大多数部署。https://charts.kubewarden.io/#configuration[文档] 描述了所有选项。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:163
+#, no-wrap
+msgid "Main components"
+msgstr "主要组件"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:166
+msgid "{short-project-name} has three main components which you interact with:"
+msgstr "{short-project-name} 有三个与之交互的主要组件："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:168
+msgid "The {policy-server}"
+msgstr "{policy-server}"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:169
+msgid "The {cluster-admission-policy}"
+msgstr "{cluster-admission-policy}"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:170
+msgid "The {admission-policy}"
+msgstr "{admission-policy}"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:171
+#, no-wrap
+msgid "`PolicyServer`"
+msgstr "`PolicyServer`"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:175
+msgid ""
+"The `kubewarden-controller` manages a {short-project-name} `PolicyServer`. "
+"You can deploy multiple {policy-server}s in the same Kubernetes cluster."
+msgstr "`kubewarden-controller` 管理一个 {short-project-name} `PolicyServer`。您可以在同一个 Kubernetes 集群中部署多个 {policy-server}。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:178
+msgid ""
+"A `PolicyServer` validates incoming requests by executing {short-project-"
+"name} policies against them."
+msgstr "`PolicyServer` 通过对传入请求执行 {short-project-name} 策略来验证它们。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:180
+msgid "This is the default `PolicyServer` configuration:"
+msgstr "这是默认的 `PolicyServer` 配置："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:194
+#, no-wrap
+msgid ""
+"apiVersion: policies.kubewarden.io/v1\n"
+"kind: PolicyServer\n"
+"metadata:\n"
+"  name: reserved-instance-for-tenant-a\n"
+"spec:\n"
+"  image: ghcr.io/kubewarden/policy-server:v1.3.0\n"
+"  replicas: 2\n"
+"  serviceAccountName: ~\n"
+"  env:\n"
+"    - name: KUBEWARDEN_LOG_LEVEL\n"
+"      value: debug\n"
+msgstr "apiVersion: policies.kubewarden.io/v1\nkind: PolicyServer\nmetadata:\n  name: reserved-instance-for-tenant-a\nspec:\n  image: ghcr.io/kubewarden/policy-server:v1.3.0\n  replicas: 2\n  serviceAccountName: ~\n  env:\n    - name: KUBEWARDEN_LOG_LEVEL\n      value: debug\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:202
+msgid ""
+"Check the https://github.com/kubewarden/policy-server/pkgs/container/policy-"
+"server[latest released `PolicyServer` version] and change the tag to match."
+msgstr "检查 https://github.com/kubewarden/policy-server/pkgs/container/policy-server[最新发布的 `PolicyServer` 版本] 并更改标签以匹配。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:206
+msgid "Overview of the attributes of the `PolicyServer` resource:"
+msgstr "`PolicyServer` 资源的属性概述："
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:232
+#, no-wrap
+msgid ""
+"| Required | Placeholder | Description\n"
+"\n"
+"| Y\n"
+"| `image`\n"
+"| The name of the container image\n"
+"\n"
+"| Y\n"
+"| `replicas`\n"
+"| The number of desired instances\n"
+"\n"
+"| N\n"
+"| `serviceAccountName`\n"
+"| The name of the `ServiceAccount` to use for the `PolicyServer` deployment. If\n"
+"  there is no provided value, the default `ServiceAccount` from the installation namespace, of `kubewarden-controller`, gets used.\n"
+"\n"
+"| N\n"
+"| `env`\n"
+"| The list of environment variables\n"
+"\n"
+"| N\n"
+"| `annotations`\n"
+"| The list of annotations\n"
+"\n"
+msgstr "| 必需 | 占位符 | 描述\n\n| Y\n| `image`\n| 容器镜像的名称\n\n| Y\n| `replicas`\n| 所需实例的数量\n\n| N\n| `serviceAccountName`\n| 用于 `PolicyServer` 部署的 `ServiceAccount` 的名称。如果\n  没有提供值，则使用 `kubewarden-controller` 安装命名空间中的默认 `ServiceAccount`。\n\n| N\n| `env`\n| 环境变量列表\n\n| N\n| `annotations`\n| 注解列表\n\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:236
+msgid ""
+"Changing any of these attributes causes a `PolicyServer` deployment with the "
+"new configuration."
+msgstr "更改这些属性中的任何一个都会导致使用新配置的 `PolicyServer` 部署。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:237
+#: docs/version-1.30/modules/en/pages/glossary.adoc:23
+#, no-wrap
+msgid "ClusterAdmissionPolicy"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:241
+msgid ""
+"The {cluster-admission-policy} resource is the core of the {short-project-"
+"name} stack. It defines how policies evaluate requests."
+msgstr "{cluster-admission-policy} 资源是 {short-project-name} 堆栈的核心。它定义了策略如何评估请求。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:248
+msgid ""
+"Enforcing policies is the most common operation which a Kubernetes "
+"administrator performs. You can declare as many policies as you want, each "
+"targets one or more Kubernetes resources (that is, `pods`, `Custom Resource` "
+"and others). You also specify the type of operations applied to targeted "
+"resources. The operations available are `CREATE`, `UPDATE`, `DELETE` and "
+"`CONNECT`."
+msgstr "强制执行策略是 Kubernetes 管理员执行的最常见的操作。您可以声明任意数量的策略，每个策略都针对一个或多个 Kubernetes 资源（即 `pods`、`Custom Resource` 等）。您还可以指定应用于目标资源的操作类型。可用的操作有 `CREATE`、`UPDATE`、`DELETE` 和 `CONNECT`。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:250
+msgid "Default {cluster-admission-policy} configuration:"
+msgstr "默认 {cluster-admission-policy} 配置："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:273
+#, no-wrap
+msgid ""
+"apiVersion: policies.kubewarden.io/v1\n"
+"kind: ClusterAdmissionPolicy\n"
+"metadata:\n"
+"  name: psp-capabilities\n"
+"spec:\n"
+"  policyServer: reserved-instance-for-tenant-a\n"
+"  module: registry://ghcr.io/kubewarden/policies/psp-capabilities:v0.1.9\n"
+"  rules:\n"
+"    - apiGroups: [\"\"]\n"
+"      apiVersions: [\"v1\"]\n"
+"      resources: [\"pods\"]\n"
+"      operations:\n"
+"        - CREATE\n"
+"        - UPDATE\n"
+"  mutating: true\n"
+"  settings:\n"
+"    allowed_capabilities:\n"
+"      - CHOWN\n"
+"    required_drop_capabilities:\n"
+"      - NET_ADMIN\n"
+msgstr "apiVersion: policies.kubewarden.io/v1\nkind: ClusterAdmissionPolicy\nmetadata:\n  name: psp-capabilities\nspec:\n  policyServer: reserved-instance-for-tenant-a\n  module: registry://ghcr.io/kubewarden/policies/psp-capabilities:v0.1.9\n  rules:\n    - apiGroups: [\"\"]\n      apiVersions: [\"v1\"]\n      resources: [\"pods\"]\n      operations:\n        - CREATE\n        - UPDATE\n  mutating: true\n  settings:\n    allowed_capabilities:\n      - CHOWN\n    required_drop_capabilities:\n      - NET_ADMIN\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:276
+msgid "Overview of the attributes of the {cluster-admission-policy} resource:"
+msgstr "{cluster-admission-policy} 资源的属性概述："
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:338
+#, no-wrap
+msgid ""
+"| Required | Placeholder | Description\n"
+"\n"
+"| N\n"
+"| `policy-server`\n"
+"| Identifies an existing `PolicyServer` object. Only\n"
+"  this `PolicyServer` instance serves the policy. The policy server named `default` serves a {cluster-admission-policy} without an explicit `PolicyServer`.\n"
+"\n"
+"| Y\n"
+"| `module`\n"
+"| The location of the {short-project-name} policy. The following schemes are allowed:\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `registry`: Policy download from an\n"
+"    https://github.com/opencontainers/artifacts[OCI artifacts] compliant\n"
+"    container registry. Example: `registry://<OCI registry/policy URL>`\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `http`, `https`: Policy download from a regular HTTP(s) server.\n"
+"    Example: `\\https://<website/policy URL>`\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `file`: Load the policy from a file in the computer file system.\n"
+"    Example: `\\file:///<policy WASM binary full path>`\n"
+"\n"
+"| Y\n"
+"| `resources`\n"
+"| The Kubernetes resources evaluated by the policy\n"
+"\n"
+"| Y\n"
+"| `operations`\n"
+"| What operations for the previously given types should be forwarded to this\n"
+"  admission policy by the API server for evaluation.\n"
+"\n"
+"| Y\n"
+"| `mutating`\n"
+"| Set this boolean value `true` for policies that can mutate\n"
+"  incoming requests\n"
+"\n"
+"| N\n"
+"| `settings`\n"
+"| A free-form object that contains the policy configuration values\n"
+"\n"
+"| N\n"
+"| `failurePolicy`\n"
+"| The action to take if the request evaluated by a policy results in an error.\n"
+"  The following options are allowed:\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `Ignore`: ignore an error calling the webhook and the API request\n"
+"    continues.\n"
+"\n"
+"| N\n"
+"|\n"
+"| - `Fail`: an error calling the webhook causes the admission to fail\n"
+"    and API request rejection.\n"
+msgstr "| 必需 | 占位符 | 描述\n\n| N\n| `policy-server`\n| 标识一个现有的 `PolicyServer` 对象。只有\n  此 `PolicyServer` 实例为策略提供服务。名为 `default` 的策略服务器为没有显式 `PolicyServer` 的 {cluster-admission-policy} 提供服务。\n\n| Y\n| `module`\n| {short-project-name} 策略的位置。允许使用以下方案：\n\n| N\n|\n| - `registry`：从\n    https://github.com/opencontainers/artifacts[OCI 工件] 兼容的\n    容器注册中心下载策略。示例：`registry://<OCI 注册中心/策略 URL>`\n\n| N\n|\n| - `http`、`https`：从常规 HTTP(s) 服务器下载策略。\n    示例：`\\https://<网站/策略 URL>`\n\n| N\n|\n| - `file`：从计算机文件系统中的文件加载策略。\n    示例：`\\file:///<策略 WASM 二进制文件完整路径>`\n\n| Y\n| `resources`\n| 由策略评估的 Kubernetes 资源\n\n| Y\n| `operations`\n| API 服务器应将先前给定类型的哪些操作转发到此\n  准入策略以进行评估。\n\n| Y\n| `mutating`\n| 对于可以改变\n  传入请求的策略，将此布尔值设置为 `true`\n\n| N\n| `settings`\n| 包含策略配置值的自由格式对象\n\n| N\n| `failurePolicy`\n| 如果由策略评估的请求导致错误，则要采取的操作。\n  允许以下选项：\n\n| N\n|\n| - `Ignore`：忽略调用 webhook 的错误，API 请求\n    继续。\n\n| N\n|\n| - `Fail`：调用 webhook 的错误导致准入失败\n    和 API 请求被拒绝。\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:347
+msgid ""
+"The controller registers the {cluster-admission-policy} resources `*` "
+"webhook `scope`. This means that registered webhooks forward all requests "
+"matching the given `resources` and `operations`, either namespaced or "
+"cluster-wide resources."
+msgstr "控制器注册 {cluster-admission-policy} 资源 `*` webhook `scope`。这意味着注册的 webhook 会转发所有与给定 `resources` 和 `operations` 匹配的请求，无论是命名空间资源还是集群范围的资源。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:351
+#: docs/version-1.30/modules/en/pages/glossary.adoc:16
+#, no-wrap
+msgid "AdmissionPolicy"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:357
+msgid ""
+"{admission-policy} is a namespace-wide resource. The policy processes only "
+"the requests that are targeting the Namespace with the {admission-policy} "
+"defined.  Other than that, there are no functional differences between the "
+"{admission-policy} and {cluster-admission-policy} resources."
+msgstr "{admission-policy} 是一个命名空间范围的资源。该策略只处理针对定义了 {admission-policy} 的命名空间的请求。除此之外，{admission-policy} 和 {cluster-admission-policy} 资源之间没有功能差异。"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:364
+msgid ""
+"{admission-policy} requires Kubernetes 1.21.0 or greater. This is because "
+"{short-project-name} uses the `kubernetes.io/metadata.name` label, "
+"introduced in Kubernetes 1.21.0"
+msgstr "{admission-policy} 需要 Kubernetes 1.21.0 或更高版本。这是因为 {short-project-name} 使用了在 Kubernetes 1.21.0 中引入的 `kubernetes.io/metadata.name` 标签。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:368
+msgid ""
+"The complete documentation of these Custom Resources is https://github.com/"
+"kubewarden/kubewarden-controller/blob/main/docs/crds/README.asciidoc[here] "
+"or on https://doc.crds.dev/github.com/kubewarden/kubewarden-"
+"controller[docs.crds.dev]."
+msgstr "这些自定义资源的完整文档位于 https://github.com/kubewarden/kubewarden-controller/blob/main/docs/crds/README.asciidoc[此处] 或 https://doc.crds.dev/github.com/kubewarden/kubewarden-controller[docs.crds.dev] 上。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:369
+#, no-wrap
+msgid "Example: Enforce your first policy"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:373
+msgid ""
+"We will use the https://github.com/kubewarden/pod-privileged-policy[`pod-"
+"privileged`] policy.  We want to prevent the creation of privileged "
+"containers inside our Kubernetes cluster by enforcing this policy."
+msgstr "我们将使用 https://github.com/kubewarden/pod-privileged-policy[`pod-privileged`] 策略。我们希望通过强制执行此策略来防止在我们的 Kubernetes 集群内创建特权容器。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:375
+msgid "Let's define a {cluster-admission-policy} to do that:"
+msgstr "让我们定义一个 {cluster-admission-policy} 来做到这一点："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:394
+#, no-wrap
+msgid ""
+"kubectl apply -f - <<EOF\n"
+"apiVersion: policies.kubewarden.io/v1\n"
+"kind: ClusterAdmissionPolicy\n"
+"metadata:\n"
+"  name: privileged-pods\n"
+"spec:\n"
+"  module: registry://ghcr.io/kubewarden/policies/pod-privileged:v0.2.2\n"
+"  rules:\n"
+"  - apiGroups: [\"\"]\n"
+"    apiVersions: [\"v1\"]\n"
+"    resources: [\"pods\"]\n"
+"    operations:\n"
+"    - CREATE\n"
+"    - UPDATE\n"
+"  mutating: false\n"
+"EOF\n"
+msgstr "kubectl apply -f - <<EOF\napiVersion: policies.kubewarden.io/v1\nkind: ClusterAdmissionPolicy\nmetadata:\n  name: privileged-pods\nspec:\n  module: registry://ghcr.io/kubewarden/policies/pod-privileged:v0.2.2\n  rules:\n  - apiGroups: [\"\"]\n    apiVersions: [\"v1\"]\n    resources: [\"pods\"]\n    operations:\n    - CREATE\n    - UPDATE\n  mutating: false\nEOF\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:397
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:463
+msgid "This produces the following output:"
+msgstr "这将产生以下输出："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:401
+#, no-wrap
+msgid "clusteradmissionpolicy.policies.kubewarden.io/privileged-pods created\n"
+msgstr "clusteradmissionpolicy.policies.kubewarden.io/privileged-pods created\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:407
+msgid ""
+"After instantiating a {cluster-admission-policy}, the status becomes "
+"`pending`, and it forces a rollout of the targeted `PolicyServer`. In the "
+"example, it's the `PolicyServer` named `default`. You can monitor the "
+"rollout by running the following command:"
+msgstr "实例化 {cluster-admission-policy} 后，状态变为 `pending`，并强制对目标 `PolicyServer` 进行滚动更新。在本例中，它是名为 `default` 的 `PolicyServer`。您可以通过运行以下命令来监控滚动更新："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:411
+#, no-wrap
+msgid "kubectl get clusteradmissionpolicy.policies.kubewarden.io/privileged-pods\n"
+msgstr "kubectl get clusteradmissionpolicy.policies.kubewarden.io/privileged-pods\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:414
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:436
+msgid "You should see the following output:"
+msgstr "您应该会看到以下输出："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:419
+#, no-wrap
+msgid ""
+"NAME              POLICY SERVER   MUTATING   STATUS\n"
+"privileged-pods   default         false      pending\n"
+msgstr "NAME              POLICY SERVER   MUTATING   STATUS\nprivileged-pods   default         false      pending\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:425
+msgid ""
+"Once the new policy is ready, the `kubewarden-controller` registers a "
+"https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/"
+"#validatingwebhookconfiguration-v1-admissionregistration-k8s-"
+"io[ValidatingWebhookConfiguration] object to serve it."
+msgstr "新策略准备就绪后，`kubewarden-controller` 会注册一个 https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/#validatingwebhookconfiguration-v1-admissionregistration-k8s-io[ValidatingWebhookConfiguration] 对象来为其提供服务。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:429
+msgid ""
+"The {cluster-admission-policy} status becomes `active` once the Deployment "
+"completes for every `PolicyServer` instance. Show {validating-webhook-"
+"configuration}s with the following command:"
+msgstr "一旦每个 `PolicyServer` 实例的部署完成，{cluster-admission-policy} 状态就会变为 `active`。使用以下命令显示 {validating-webhook-configuration}："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:433
+#, no-wrap
+msgid "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l kubewarden\n"
+msgstr "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l kubewarden\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:441
+#, no-wrap
+msgid ""
+"NAME                          WEBHOOKS   AGE\n"
+"clusterwide-privileged-pods   1          9s\n"
+msgstr "NAME                          WEBHOOKS   AGE\nclusterwide-privileged-pods   1          9s\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:445
+msgid ""
+"Once the {cluster-admission-policy} is active and the {validating-webhook-"
+"configuration} registers, you can test the policy."
+msgstr "一旦 {cluster-admission-policy} 处于活动状态并且 {validating-webhook-configuration} 注册，您就可以测试该策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:447
+msgid ""
+"First, you can create a Pod with a Container _not_ in `privileged` mode:"
+msgstr "首先，您可以创建一个容器_不_处于 `privileged` 模式的 Pod："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:460
+#, no-wrap
+msgid ""
+"kubectl apply -f - <<EOF\n"
+"apiVersion: v1\n"
+"kind: Pod\n"
+"metadata:\n"
+"  name: unprivileged-pod\n"
+"spec:\n"
+"  containers:\n"
+"    - name: nginx\n"
+"      image: nginx:latest\n"
+"EOF\n"
+msgstr "kubectl apply -f - <<EOF\napiVersion: v1\nkind: Pod\nmetadata:\n  name: unprivileged-pod\nspec:\n  containers:\n    - name: nginx\n      image: nginx:latest\nEOF\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:467
+#, no-wrap
+msgid "pod/unprivileged-pod created\n"
+msgstr "pod/unprivileged-pod created\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:470
+msgid "The Pod is successfully created."
+msgstr "Pod 已成功创建。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:472
+msgid ""
+"Now, you can create a Pod with at least one Container `privileged` flag:"
+msgstr "现在，您可以创建一个至少带有一个容器 `privileged` 标志的 Pod："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:487
+#, no-wrap
+msgid ""
+"kubectl apply -f - <<EOF\n"
+"apiVersion: v1\n"
+"kind: Pod\n"
+"metadata:\n"
+"  name: privileged-pod\n"
+"spec:\n"
+"  containers:\n"
+"    - name: nginx\n"
+"      image: nginx:latest\n"
+"      securityContext:\n"
+"          privileged: true\n"
+"EOF\n"
+msgstr "kubectl apply -f - <<EOF\napiVersion: v1\nkind: Pod\nmetadata:\n  name: privileged-pod\nspec:\n  containers:\n    - name: nginx\n      image: nginx:latest\n      securityContext:\n          privileged: true\nEOF\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:490
+msgid ""
+"The policy denies creation of the Pod and you should see the following "
+"message:"
+msgstr "策略拒绝创建 Pod，您应该会看到以下消息："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:494
+#, no-wrap
+msgid "Error from server: error when creating \"STDIN\": admission webhook \"clusterwide-privileged-pods.kubewarden.admission\" denied the request: Privileged container is not allowed\n"
+msgstr "来自服务器的错误：创建“STDIN”时出错：准入 webhook“clusterwide-privileged-pods.kubewarden.admission”拒绝了请求：不允许特权容器\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:503
+msgid ""
+"Both examples didn't define a `namespace`, which means the `default` "
+"namespace was the target. However, as you could see in the second example, "
+"the policy is still applied. As stated previously, this is due to the scope "
+"being cluster-wide and not targeting a specific namespace."
+msgstr "两个示例都没有定义 `namespace`，这意味着目标是 `default` 命名空间。但是，正如您在第二个示例中看到的那样，该策略仍然适用。如前所述，这是因为范围是集群范围的，而不是针对特定的命名空间。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:507
+#, no-wrap
+msgid "Uninstall"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:511
+msgid ""
+"You can remove the resources created by uninstalling the `helm` charts as "
+"follows:"
+msgstr "您可以通过卸载 `helm` chart 来删除创建的资源，如下所示："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:515
+#, no-wrap
+msgid "helm uninstall --namespace kubewarden kubewarden-defaults\n"
+msgstr "helm uninstall --namespace kubewarden kubewarden-defaults\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:520
+#, no-wrap
+msgid "helm uninstall --namespace kubewarden kubewarden-controller\n"
+msgstr "helm uninstall --namespace kubewarden kubewarden-controller\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:525
+#, no-wrap
+msgid "helm uninstall --namespace kubewarden kubewarden-crds\n"
+msgstr "helm uninstall --namespace kubewarden kubewarden-crds\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:529
+msgid ""
+"After removal of the `helm` charts remove the Kubernetes namespace used to "
+"deploy the {short-project-name} stack:"
+msgstr "删除 `helm` chart 后，删除用于部署 {short-project-name} 堆栈的 Kubernetes 命名空间："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:533
+#, no-wrap
+msgid "kubectl delete namespace kubewarden\n"
+msgstr "kubectl delete namespace kubewarden\n"
+
+#. type: delimited block =
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:542
+msgid ""
+"{short-project-name} contains a helm pre-delete hook that removes all "
+"`PolicyServer`s and `kubewarden-controller`s. Then the `kubewarden-"
+"controller` deletes all resources, so it's important that `kubewarden-"
+"controller` is running when helm uninstall executes."
+msgstr "{short-project-name} 包含一个 helm pre-delete hook，可删除所有 `PolicyServer` 和 `kubewarden-controller`。然后 `kubewarden-controller` 会删除所有资源，因此在执行 helm uninstall 时 `kubewarden-controller` 正在运行非常重要。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:548
+msgid ""
+"{short-project-name} deletes {validating-webhook-configuration}s and "
+"{mutating-webhook-configuration}s. Check this with:"
+msgstr "{short-project-name} 会删除 {validating-webhook-configuration} 和 {mutating-webhook-configuration}。请通过以下方式检查："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:552
+#, no-wrap
+msgid "kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+msgstr ""
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:557
+#, no-wrap
+msgid "kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+msgstr "kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io -l \"kubewarden\"\n"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:561
+msgid ""
+"If these resources aren't automatically removed, remove them manually using "
+"the following command:"
+msgstr "如果这些资源没有自动删除，请使用以下命令手动删除它们："
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:565
+#, no-wrap
+msgid "kubectl delete -l \"kubewarden\" validatingwebhookconfigurations.admissionregistration.k8s.io\n"
+msgstr "kubectl delete -l \"kubewarden\" validatingwebhookconfigurations.admissionregistration.k8s.io\n"
+
+#. type: delimited block -
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:570
+#, no-wrap
+msgid "kubectl delete -l \"kubewarden\" mutatingwebhookconfigurations.admissionregistration.k8s.io\n"
+msgstr "kubectl delete -l \"kubewarden\" mutatingwebhookconfigurations.admissionregistration.k8s.io\n"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:572
+#, no-wrap
+msgid "Wrapping up"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:577
+msgid ""
+"{cluster-admission-policy} is the core resource that a cluster operator has "
+"to manage. The `kubewarden-controller` module automatically takes care of "
+"the configuration for the rest of the resources needed to run the policies."
+msgstr "{cluster-admission-policy} 是集群操作员必须管理的核心资源。`kubewarden-controller` 模块会自动处理运行策略所需的其余资源的配置。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:578
+#, no-wrap
+msgid "What's next?"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:585
+msgid ""
+"Now, you are ready to deploy {short-project-name}! Have a look at the "
+"policies on https://artifacthub.io/packages/search?kind=13[artifacthub.io], "
+"on https://github.com/topics/kubewarden-policy[GitHub], or reuse existing "
+"Rego policies as shown in the xref:tutorials/writing-policies/rego/01-intro-"
+"rego.adoc[following chapters]."
+msgstr "现在，您已准备好部署 {short-project-name}！请查看 https://artifacthub.io/packages/search?kind=13[artifacthub.io] 上的策略，或 https://github.com/topics/kubewarden-policy[GitHub] 上的策略，或重用 xref:tutorials/writing-policies/rego/01-intro-rego.adoc[以下章节] 中所示的现有 Rego 策略。"
+
+#. type: Block title
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:586
+#, no-wrap
+msgid "Full list of available policies on ArtifactHub"
+msgstr ""
+
+#. type: delimited block +
+#: docs/version-1.30/modules/en/pages/quick-start.adoc:593
+#, no-wrap
+msgid "<div class=\"artifacthub-widget-group\" data-url=\"https://artifacthub.io/packages/search?kind=13&sort=relevance&page=1\" data-theme=\"light\" data-header=\"false\" data-stars=\"false\" data-color=\"#fe7c3f\" data-responsive=\"true\" data-loading=\"true\"></div>\n"
+msgstr "<div class=\"artifacthub-widget-group\" data-url=\"https://artifacthub.io/packages/search?kind=13&sort=relevance&page=1\" data-theme=\"light\" data-header=\"false\" data-stars=\"false\" data-color=\"#fe7c3f\" data-responsive=\"true\" data-loading=\"true\"></div>\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/organization.adoc:2
+#, no-wrap
+msgid "Documentation organization"
+msgstr "文档组织"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:14
+msgid "{project-name} organizes project documentation as follows:"
+msgstr "{project-name} 项目文档的组织方式如下："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:16
+msgid "xref:/introduction.adoc[Introduction]"
+msgstr "xref:/introduction.adoc[简介]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:17
+msgid "xref:/quick-start.adoc[Quick start]"
+msgstr "xref:/quick-start.adoc[快速入门]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:18
+msgid "_Tutorials_—learning through examples."
+msgstr "_教程_——通过示例学习。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:19
+msgid "_Explanations_—underlying concepts."
+msgstr "_解释_——基本概念。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:20
+msgid "_How-tos_—getting {short-project-name} tasks done."
+msgstr "_操作方法_——完成 {short-project-name} 任务。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:21
+msgid "_Reference_"
+msgstr "_参考_"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:22
+msgid "Organization—this page"
+msgstr "组织——本页"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:23
+msgid "xref:/personas.adoc[Personas]—who is {short-project-name} for?"
+msgstr "xref:/personas.adoc[角色]——{short-project-name} 适用于谁？"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:24
+msgid "xref:/disclosure.adoc[Security]"
+msgstr "xref:/disclosure.adoc[安全]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:25
+msgid "xref:/glossary.adoc[Glossary]"
+msgstr "xref:/glossary.adoc[词汇表]"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:30
+msgid ""
+"Most of the material is in the four sections, _Tutorials_, _Explanations_, "
+"_How-tos_, and _Reference_. There may be overlap as the sections are not "
+"mutually exclusive. The {short-project-name} project tries to follow the "
+"link:https://diataxis.fr/[Diátaxis] documentation framework."
+msgstr "大部分材料分为四个部分：_教程_、_解释_、_操作方法_和_参考_。由于这些部分并非相互排斥，因此可能会有重叠。{short-project-name} 项目试图遵循 link:https://diataxis.fr/[Diátaxis] 文档框架。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:31
+#, no-wrap
+msgid "Navigation"
+msgstr "导航"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:36
+msgid ""
+"The left hand contents menu always indicates your current document "
+"location.  The right hand sections menu shows the current page sections. "
+"There is also a 'breadcrumbs' feature at the top of the main content panel "
+"on each page."
+msgstr "左侧的内容菜单始终指示您当前的文档位置。右侧的章节菜单显示当前页面的章节。每个页面的主内容面板顶部还有一个“面包屑”功能。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:37
+#, no-wrap
+msgid "Search"
+msgstr "搜索"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:40
+msgid "A search box facility is in the header panel of each page."
+msgstr "每个页面的标题面板中都有一个搜索框工具。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:41
+#, no-wrap
+msgid "Editing"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:44
+msgid "A link to the page source on GitHub is at the bottom of each page."
+msgstr ""
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/organization.adoc:45
+#, no-wrap
+msgid "Other resources"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:48
+msgid "Also maintained are:"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:50
+msgid "link:https://github.com/kubewarden/rfc[RFCs] for the project."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:52
+msgid ""
+"A series of link:https://www.kubewarden.io/blog/[blog posts] related to "
+"{community-name} releases."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/organization.adoc:53
+msgid ""
+"Items related to the link:https://github.com/kubewarden/community[community] "
+"management of {community-name}."
+msgstr ""
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:2
+#, no-wrap
+msgid "Security disclosure"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:20
+msgid ""
+"The {project-name} team appreciates investigative work on security "
+"vulnerabilities carried out by well-intentioned, ethical security "
+"researchers. {short-project-name} follows the practice of [responsible "
+"disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) to best "
+"protect {short-project-name}'s user base from the impact of security issues. "
+"On {short-project-name}'s side, this means:"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:22
+msgid "{short-project-name} responds to security incidents on priority."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:23
+msgid ""
+"{short-project-name} releases fixes for issues as soon as is practical, "
+"prioritizing by risk."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:25
+msgid ""
+"{short-project-name} always transparently lets the community know about any "
+"incident that affects them."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:31
+msgid ""
+"If you have found a security vulnerability in {short-project-name}, the "
+"easiest way to report a vulnerability is through the https://github.com/"
+"kubewarden/community/security/advisories[Security tab on GitHub]. This "
+"mechanism allows maintainers to communicate privately with you, and you "
+"don't need to encrypt your messages."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:36
+msgid ""
+"Alternatively, you can disclose it responsibly by emailing xref:mailto:cncf-"
+"kubewarden-maintainers@lists.cncf.io.adoc[cncf-kubewarden-"
+"maintainers@lists.cncf.io] in an *unencrypted* message. Please don't discuss "
+"potential vulnerabilities in public without validating with us first."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:40
+msgid ""
+"You can also come talk in our https://kubernetes.slack.com/archives/"
+"C03L52JRAFM[slack-room] on the Kubernetes Slack server."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:42
+msgid "On receipt the security team:"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:45
+msgid ""
+"Reviews the report, verifies the vulnerability and responds with "
+"confirmation and/or further information requests."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:47
+msgid ""
+"After addressing the reported security bug, {short-project-name} notifies "
+"the Researcher, who is then welcome to optionally disclose publicly."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/disclosure.adoc:50
+msgid ""
+"Please, refer to the https://github.com/kubewarden/community[community "
+"repository] to find more about the project Governance and Security Policy."
+msgstr ""
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/enterprise.adoc:2
+#, no-wrap
+msgid "Enterprise support"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/enterprise.adoc:14
+msgid "These organization(s) provide enterprise support for {project-name}:"
+msgstr ""
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/enterprise.adoc:21
+#, no-wrap
+msgid ""
+"| Organization | Offering\n"
+"\n"
+"| link:https://suse.com[SUSE]\n"
+"| SUSE provides complete {project-name} enterprise support with link:https://www.suse.com/products/rancher[SUSE® Rancher Prime].\n"
+msgstr "| 组织 | 产品\n\n| link:https://suse.com[SUSE]\n| SUSE 通过 link:https://www.suse.com/products/rancher[SUSE® Rancher Prime] 提供完整的 {project-name} 企业支持。\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/glossary.adoc:2
+#, no-wrap
+msgid "Glossary"
+msgstr "词汇表"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:14
+#, no-wrap
+msgid "A"
+msgstr "A"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:20
+msgid ""
+"A namespace-wide resource. The policy processes only those requests "
+"targeting the namespace in which the AdmissionPolicy is defined."
+msgstr "一个命名空间范围的资源。该策略只处理针对定义了 AdmissionPolicy 的命名空间的请求。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:21
+#, no-wrap
+msgid "C"
+msgstr "C"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:26
+msgid ""
+"An <<_admissionpolicy,AdmissionPolicy>> which targets cluster-wide resources."
+msgstr "一个针对集群范围资源的 <<_admissionpolicy,AdmissionPolicy>>。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:27
+#, no-wrap
+msgid "ClusterReport"
+msgstr "ClusterReport"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:31
+msgid ""
+"A <<_report,Report>> and a ClusterReport store results of policy scans. "
+"Which one is used, depends on the scope of the resource."
+msgstr "<<_report,Report>> 和 ClusterReport 存储策略扫描的结果。使用哪一个取决于资源的范围。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:32
+#, no-wrap
+msgid "K"
+msgstr "K"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:34
+#, no-wrap
+msgid "kwctl"
+msgstr "kwctl"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:37
+msgid ""
+"A CLI tool to generate and test Kubernetes YAML files for policy deployment."
+msgstr "一个用于生成和测试用于策略部署的 Kubernetes YAML 文件的 CLI 工具。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:38
+#, no-wrap
+msgid "M"
+msgstr "M"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:40
+#, no-wrap
+msgid "MutatingWebhookConfiguration"
+msgstr "MutatingWebhookConfiguration"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:47
+msgid ""
+"A https://kubernetes.io/docs/reference/access-authn-authz/extensible-"
+"admission-controllers/#what-are-admission-webhooks[Kubernetes resource] "
+"created by the {short-project-name} controller to let Kubernetes know where "
+"to send an `AdmissionReview`.  In other words, this is how a {short-project-"
+"name} controller informs Kubernetes where to find a resource mutating policy."
+msgstr "由 {short-project-name} 控制器创建的 https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes 资源]，用于告知 Kubernetes 将 `AdmissionReview` 发送到何处。换句话说，这就是 {short-project-name} 控制器告知 Kubernetes 在何处查找资源改变策略的方式。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:48
+#, no-wrap
+msgid "P"
+msgstr "P"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:50
+#, no-wrap
+msgid "Report"
+msgstr "报告"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/glossary.adoc:54
+msgid ""
+"A Report and a <<_clusterreport,ClusterReport>> store results of policy "
+"scans. Which one is used depends on the scope of the resource."
+msgstr "报告和 <<_clusterreport,ClusterReport>> 存储策略扫描的结果。使用哪一个取决于资源的范围。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:56
+#, no-wrap
+msgid "PolicyServer"
+msgstr ""
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:59
+msgid ""
+"A PolicyServer validates incoming requests by executing {short-project-name} "
+"policies against requests."
+msgstr "PolicyServer 通过对请求执行 {short-project-name} 策略来验证传入的请求。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:60
+#, no-wrap
+msgid "V"
+msgstr ""
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:62
+#, no-wrap
+msgid "ValidatingWebhookConfiguration"
+msgstr ""
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:68
+msgid ""
+"A https://kubernetes.io/docs/reference/access-authn-authz/extensible-"
+"admission-controllers/#what-are-admission-webhooks[Kubernetes resource] "
+"created by the {short-project-name} controller to let Kubernetes know where "
+"to send a `AdmissionReview`.  In other words, this is how {short-project-"
+"name} informs Kubernetes where to find a resource validating policy."
+msgstr "由 {short-project-name} 控制器创建的 https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks[Kubernetes 资源]，用于告知 Kubernetes 将 `AdmissionReview` 发送到何处。换句话说，这就是 {short-project-name} 告知 Kubernetes 在何处查找资源验证策略的方式。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/glossary.adoc:69
+#, no-wrap
+msgid "W"
+msgstr "W"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:71
+#, no-wrap
+msgid "waPC"
+msgstr "waPC"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:74
+msgid "WebAssembly Procedure Calls. https://wapc.io."
+msgstr "WebAssembly 过程调用。https://wapc.io。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:75
+#, no-wrap
+msgid "WASI"
+msgstr "WASI"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:78
+msgid "WebAssembly System Interface. https://wasi.dev."
+msgstr "WebAssembly 系统接口。https://wasi.dev。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:79
+#, no-wrap
+msgid "Wasm"
+msgstr "Wasm"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:83
+msgid ""
+"A binary instruction format for a stack-based virtual machine. Designed for "
+"web deployment. https://webassembly.org."
+msgstr "一种用于基于堆栈的虚拟机的二进制指令格式。专为 Web 部署而设计。https://webassembly.org。"
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/pages/glossary.adoc:84
+#, no-wrap
+msgid "Wasmtime"
+msgstr "Wasmtime"
+
+#. type: #_policy_server
+#: docs/version-1.30/modules/en/pages/glossary.adoc:86
+msgid "A runtime for WebAssembly. https://wasmtime.dev."
+msgstr "WebAssembly 的运行时。https://wasmtime.dev。"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/personas.adoc:2
+#, no-wrap
+msgid "Who is this project for? The personas."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/personas.adoc:12
+msgid "## {project-name} personas"
+msgstr "## {project-name} 角色"
+
+#. type: Table
+#: docs/version-1.30/modules/en/pages/personas.adoc:34
+#, no-wrap
+msgid ""
+"|Persona |Description\n"
+"\n"
+"|**Policy user**\n"
+"|Someone who takes a policy and uses it in a cluster. They deploy policies and observe results. They configure the policy settings but do not write the policy internal code (if there is any).\n"
+"\n"
+"|**Operator**\n"
+"|Someone operating {short-project-name} in a cluster. Installs and maintains {short-project-name}.\n"
+"\n"
+"|**Policy distributor**\n"
+"|Someone who has written a policy and wants to share it with others. They want the policy consumed by the “policy user” role. A distributor of {short-project-name} policies, to places such as ArtifactHub or private OCI repositories.\n"
+"\n"
+"|**Policy developer**\n"
+"|A person designing and writing policies for {short-project-name} for others to consume.\n"
+"\n"
+"|**Integrator**\n"
+"|Builds with, using, or on top of {short-project-name}. Perhaps a custom UI or a helper tool for generating policies.\n"
+"\n"
+"|**Developer**\n"
+"|A person working on the {short-project-name} product set. Building {short-project-name} itself.\n"
+msgstr "|角色 |描述\n\n|**策略用户**\n|获取策略并在集群中使用它的人。他们部署策略并观察结果。他们配置策略设置，但不编写策略内部代码（如果有）。\n\n|**操作员**\n|在集群中操作 {short-project-name} 的人。安装和维护 {short-project-name}。\n\n|**策略分发者**\n|编写了策略并希望与他人共享的人。他们希望策略由“策略用户”角色使用。{short-project-name} 策略的分发者，分发到 ArtifactHub 或私有 OCI 存储库等地方。\n\n|**策略开发人员**\n|为 {short-project-name} 设计和编写策略供他人使用的人。\n\n|**集成商**\n|使用、基于或在 {short-project-name} 之上构建。可能是一个自定义 UI 或用于生成策略的辅助工具。\n\n|**开发人员**\n|从事 {short-project-name} 产品集工作的人。构建 {short-project-name} 本身。\n"
+
+#. type: Title =
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:2
+#, no-wrap
+msgid "{project-name} use cases"
+msgstr "{project-name} 使用案例"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:14
+msgid ""
+"These are a few example use cases for {project-name}'s xref:/"
+"personas.adoc[personas]."
+msgstr "以下是 {project-name} 的 xref:/personas.adoc[角色] 的一些示例使用案例。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:15
+#, no-wrap
+msgid "Case A: As a Kubernetes operator, I want to ensure my cluster is safe and compliant."
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:21
+msgid ""
+"I deploy {project-name} and its default configuration with its `kubewarden-"
+"defaults` Helm chart, in the `kubewarden` Namespace. This deploys a default "
+"PolicyServer and recommended ClusterAdmissionPolicies in the `kubewarden` "
+"namespace, solely under the control of the Kubernetes operator."
+msgstr "我使用其 `kubewarden-defaults` Helm chart 在 `kubewarden` 命名空间中部署 {project-name} 及其默认配置。这会在 `kubewarden` 命名空间中部署一个默认的 PolicyServer 和推荐的 ClusterAdmissionPolicies，完全由 Kubernetes 操作员控制。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:24
+msgid ""
+"As an operator, I can add more PolicyServers under a managed Namespace (such "
+"as `kubewarden`) to distribute load and fault tolerance."
+msgstr "作为操作员，我可以在受管命名空间（例如 `kubewarden`）下添加更多 PolicyServer 以分配负载和容错。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:29
+msgid ""
+"Operators can deploy more ClusterAdmissionPolicies and "
+"ClusterAdmissionPolicyGroups. These check all the Kubernetes resources, for "
+"any type of operation (GET, CREATE, UPDATE, PATCH, DELETE, PROXY). This "
+"ensures operations into the cluster are safe and compliant."
+msgstr "操作员可以部署更多的 ClusterAdmissionPolicies 和 ClusterAdmissionPolicyGroups。这些会检查所有 Kubernetes 资源，适用于任何类型的操作（GET、CREATE、UPDATE、PATCH、DELETE、PROXY）。这可确保进入集群的操作是安全且合规的。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:31
+msgid "These include:"
+msgstr "这些包括："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:33
+msgid "security"
+msgstr "安全"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:34
+msgid "compliance (to industry standards or company regulations)"
+msgstr "合规性（符合行业标准或公司法规）"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:35
+msgid "resource optimization (via mutating policies)"
+msgstr "资源优化（通过改变策略）"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:36
+msgid ""
+"governance of Kubernetes environments (via labels and naming conventions)"
+msgstr "Kubernetes 环境的治理（通过标签和命名约定）"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:37
+msgid "best practices"
+msgstr "最佳实践"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:38
+msgid "image verification"
+msgstr "镜像验证"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:45
+msgid ""
+"Security expectations change over time. Previously correct deployments in "
+"the cluster may no longer be so. Yet {short-project-name} has already "
+"accepted those operations in the cluster. In these situations, the operator "
+"can deploy the Audit Scanner feature, a CronJob that runs periodically and "
+"evaluates the existing resources in the cluster. This checks the cluster is "
+"safe and compliant even over time."
+msgstr "安全期望会随着时间的推移而改变。集群中以前正确的部署可能不再正确。然而，{short-project-name} 已经在集群中接受了这些操作。在这种情况下，操作员可以部署审计扫描器功能，这是一个定期运行并评估集群中现有资源的 CronJob。这可以检查集群是否即使随着时间的推移也是安全且合规的。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:48
+msgid ""
+"The operator can configure policies in `monitor` mode instead of `protect` "
+"mode, to learn from the state of the cluster without blocking operations."
+msgstr "操作员可以将策略配置为 `monitor` 模式而不是 `protect` 模式，以便在不阻止操作的情况下从集群状态中学习。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:51
+msgid ""
+"Operators can receive information from policies and the {short-project-name} "
+"stack by consuming logs and OpenTelemetry information for metrics and "
+"tracing."
+msgstr "操作员可以通过使用日志和 OpenTelemetry 信息来获取指标和跟踪，从而从策略和 {short-project-name} 堆栈中接收信息。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:52
+#, no-wrap
+msgid "Case B: As a Kubernetes operator, I want to provide a framework to my Kubernetes users so they can self-service in their Namespaces."
+msgstr "案例 B：作为 Kubernetes 操作员，我希望为我的 Kubernetes 用户提供一个框架，以便他们可以在自己的命名空间中进行自助服务。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:57
+msgid ""
+"As an operator, I deploy {short-project-name} as in Case A for a set of "
+"policies of my choosing. This provides me with a safe baseline in the "
+"cluster, that other users can't evade."
+msgstr "作为操作员，我像案例 A 一样为我选择的一组策略部署 {short-project-name}。这为我在集群中提供了一个安全的基线，其他用户无法规避。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:65
+msgid ""
+"As well as Case A, I have different personas per Namespaces: perhaps teams, "
+"team administrators, test deployments, and others. I allow each Namespace "
+"administrator to self-service by letting them deploy PolicyServers in their "
+"Namespace, along with namespaced AdmissionPolicies and "
+"AdmissionPolicyGroups.  This architecture means that they're in control of "
+"their PolicyServer and policies. The policies only apply to their Namespace, "
+"and they constrain resource usage to their Namespace."
+msgstr "除了案例 A，我每个命名空间都有不同的角色：也许是团队、团队管理员、测试部署等。我允许每个命名空间管理员通过让他们在自己的命名空间中部署 PolicyServer 以及命名空间范围的 AdmissionPolicies 和 AdmissionPolicyGroups 来进行自助服务。这种架构意味着他们可以控制自己的 PolicyServer 和策略。这些策略仅适用于他们的命名空间，并且它们将资源使用限制在他们的命名空间内。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:69
+msgid ""
+"It also permits the operator to segregate noisy tenants, reserving "
+"performant PolicyServers for those tenants and tasks that need high "
+"throughput and low latency, for example."
+msgstr "它还允许操作员隔离嘈杂的租户，为需要高吞吐量和低延迟的租户和任务保留高性能的 PolicyServer。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:70
+#, no-wrap
+msgid "Case C: As a policy author, I want to use the tools and languages that I know to write new policies."
+msgstr "案例 C：作为策略作者，我希望使用我熟悉的工具和语言来编写新策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:76
+msgid ""
+"{short-project-name} achieves this by supporting any language that compiles "
+"to WebAssembly as possible target languages for policies. This means that "
+"policy authors can reuse their workflows (`git`, CI, editors, peer reviews, "
+"etc.), and tools: languages, language libraries, testing harnesses and "
+"frameworks, etc."
+msgstr "{short-project-name} 通过支持任何可编译为 WebAssembly 的语言作为策略的可能目标语言来实现这一点。这意味着策略作者可以重用他们的工作流（`git`、CI、编辑器、同行评审等）和工具：语言、语言库、测试工具和框架等。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:82
+msgid ""
+"It permits re-using Domain Specific Languages (like Rego, CEL, Kyverno's "
+"YAML+macros) or general-purpose languages (like Go, Rust, C#, Javascript, "
+"any that compiles to Wasm). {short-project-name} provides xref:/tutorials/"
+"writing-policies/index.adoc[SDKs] for a few languages as first-class support."
+msgstr "它允许重用领域特定语言（如 Rego、CEL、Kyverno 的 YAML+宏）或通用语言（如 Go、Rust、C#、Javascript，任何可编译为 Wasm 的语言）。{short-project-name} 为一些语言提供 xref:/tutorials/writing-policies/index.adoc[SDK] 作为一流支持。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:87
+msgid ""
+"{short-project-name} policies can be simple or complex xref:/explanations/"
+"context-aware-policies.adoc[context-aware] policies.  Context-aware policies "
+"are also used to interface with separate workloads (for example, to obtain "
+"information from an image scanner long-running service)."
+msgstr "{short-project-name} 策略可以是简单的，也可以是复杂的 xref:/explanations/context-aware-policies.adoc[上下文感知] 策略。上下文感知策略也用于与单独的工作负载接口（例如，从长时间运行的镜像扫描器服务获取信息）。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:88
+#, no-wrap
+msgid "Case D: As a system integrator, I want to re-use {short-project-name} as part of my security and compliance solution."
+msgstr "案例 D：作为系统集成商，我希望将 {short-project-name} 作为我的安全和合规解决方案的一部分进行重用。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:92
+msgid ""
+"As a system integrator, I want to re-use {short-project-name}, and possibly "
+"re-use other solutions by including them in {short-project-name}."
+msgstr "作为系统集成商，我希望重用 {short-project-name}，并可能通过将其他解决方案包含在 {short-project-name} 中来重用它们。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:96
+msgid ""
+"As a system integrator, I can reuse parts of {short-project-name}. For "
+"example, the `policy-server`, to police resources, internal or external to "
+"the Kubernetes cluster via the xref:/howtos/raw-policies.adoc[\"raw "
+"policies\"] feature."
+msgstr "作为系统集成商，我可以重用 {short-project-name} 的部分内容。例如，`policy-server`，通过 xref:/howtos/raw-policies.adoc[“原始策略”] 功能来监管 Kubernetes 集群内部或外部的资源。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:100
+msgid ""
+"System integrators can choose to deploy the `kubewarden-controller` or "
+"manage the CRDs on their own. They can choose to deploy or scale the Audit "
+"Scanner as needed."
+msgstr "系统集成商可以选择部署 `kubewarden-controller` 或自行管理 CRD。他们可以根据需要选择部署或扩展审计扫描器。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:104
+msgid ""
+"System integrators can create new components. For example, an image scanner, "
+"and interface with it via a context-aware policy, without having a "
+"monolithic implementation in a Kubernetes controller."
+msgstr "系统集成商可以创建新组件。例如，一个镜像扫描器，并通过上下文感知策略与其接口，而无需在 Kubernetes 控制器中进行单体实现。"
+
+#. type: Title ==
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:105
+#, no-wrap
+msgid "Non-goals"
+msgstr "非目标"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:108
+msgid "{short-project-name} doesn't intend to:"
+msgstr "{short-project-name} 不打算："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:110
+msgid "Replace Kubernetes built-in security features, but complement them:"
+msgstr "取代 Kubernetes 内置的安全功能，而是补充它们："
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:111
+msgid "{short-project-name} provides migration from PSPs."
+msgstr "{short-project-name} 提供从 PSP 的迁移。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:113
+msgid ""
+"You can re-use ValidatingAdmissionPolicies and CEL policies with {short-"
+"project-name}'s `cel-policy`."
+msgstr "您可以使用 {short-project-name} 的 `cel-policy` 重用 ValidatingAdmissionPolicies 和 CEL 策略。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:114
+msgid ""
+"{short-project-name} policies can be mutating, while Pod Security Admission "
+"cannot."
+msgstr "{short-project-name} 策略可以是改变性的，而 Pod 安全准入则不能。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:116
+msgid ""
+"{short-project-name} policies benefit from the {short-project-name} stack "
+"features (audit scanner, telemetry, CRD management)."
+msgstr "{short-project-name} 策略受益于 {short-project-name} 堆栈功能（审计扫描器、遥测、CRD 管理）。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:118
+msgid ""
+"Provide runtime security like intrusion detection or runtime container "
+"isolation."
+msgstr "提供运行时安全，如入侵检测或运行时容器隔离。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:119
+msgid "Provide host system protection of clusters."
+msgstr "提供集群的主机系统保护。"
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/pages/use-cases.adoc:120
+msgid ""
+"Provide infinite policy execution flexibility. To prevent DoS attacks, "
+"policies' processing times are limited."
+msgstr "提供无限的策略执行灵活性。为防止 DoS 攻击，策略的处理时间是有限的。"
