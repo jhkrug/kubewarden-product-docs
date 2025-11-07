@@ -1,0 +1,34 @@
+include::partial$variables.adoc[]
+= Who is this project for? The personas.
+:revdate: 2025-11-07
+:page-revdate: {revdate}
+:description: Who is this project for? The personas.
+:keywords: ["{project-name}", kubewarden, documentation, personas]
+:doc-persona: [kubewarden-all]
+:doc-type: [explanation]
+:doc-topic: [explanation]
+
+## {project-name} 角色
+
+[cols="1,2", options="header"]
+|===
+|角色 |描述
+
+|**策略用户**
+|获取策略并在集群中使用它的人。他们部署策略并观察结果。他们配置策略设置，但不编写策略内部代码（如果有）。
+
+|**操作员**
+|在集群中操作 {short-project-name} 的人。安装和维护 {short-project-name}。
+
+|**策略分发者**
+|编写了策略并希望与他人共享的人。他们希望策略由“策略用户”角色使用。{short-project-name} 策略的分发者，分发到 ArtifactHub 或私有 OCI 存储库等地方。
+
+|**策略开发人员**
+|为 {short-project-name} 设计和编写策略供他人使用的人。
+
+|**集成商**
+|使用、基于或在 {short-project-name} 之上构建。可能是一个自定义 UI 或用于生成策略的辅助工具。
+
+|**开发人员**
+|从事 {short-project-name} 产品集工作的人。构建 {short-project-name} 本身。
+|===

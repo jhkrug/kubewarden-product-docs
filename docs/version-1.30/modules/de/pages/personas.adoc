@@ -1,6 +1,6 @@
 include::partial$variables.adoc[]
 = Für wen ist dieses Projekt? Die Personas.
-:revdate: 2025-11-06
+:revdate: 2025-11-07
 :page-revdate: {revdate}
 :description: Who is this project for? The personas.
 :keywords: ["{project-name}", kubewarden, documentation, personas]

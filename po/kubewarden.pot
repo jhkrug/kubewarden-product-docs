@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-06 17:15+0100\n"
+"POT-Creation-Date: 2025-11-07 14:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,740 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:3
+msgid "xref:introduction.adoc[Introduction]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:4
+msgid "xref:quick-start.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:5
+msgid "Tutorials"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:6
+msgid "xref:tutorials/writing-policies/index.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:7
+msgid "xref:tutorials/writing-policies/CEL/01-intro-cel.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:8
+msgid "xref:tutorials/writing-policies/CEL/02-reusing-vap.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:9
+msgid "xref:tutorials/writing-policies/CEL/03-context-aware.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:10
+msgid "xref:tutorials/writing-policies/CEL/04-example-sigstore.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:11
+msgid "xref:tutorials/writing-policies/rust/01-intro-rust.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:12
+msgid "xref:tutorials/writing-policies/rust/02-create-policy.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:13
+msgid "xref:tutorials/writing-policies/rust/03-define-policy-settings.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:14
+msgid "xref:tutorials/writing-policies/rust/04-write-validation-logic.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:15
+msgid "xref:tutorials/writing-policies/rust/05-mutation-policy.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:16
+msgid "xref:tutorials/writing-policies/rust/06-logging.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:17
+msgid "xref:tutorials/writing-policies/rust/07-build-and-distribute.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:18
+msgid "xref:tutorials/writing-policies/rust/08-raw-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:19
+msgid "xref:tutorials/writing-policies/go/01-intro-go.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:20
+msgid "xref:tutorials/writing-policies/go/02-scaffold.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:21
+msgid "xref:tutorials/writing-policies/go/03-policy-settings.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:22
+msgid "xref:tutorials/writing-policies/go/04-validation.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:23
+msgid "xref:tutorials/writing-policies/go/05-e2e-tests.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:24
+msgid "xref:tutorials/writing-policies/go/06-logging.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:25
+msgid "xref:tutorials/writing-policies/go/07-automate.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:26
+msgid "xref:tutorials/writing-policies/go/08-distribute.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:27
+msgid "xref:tutorials/writing-policies/go/09-validation-with-queries.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:28
+msgid "xref:tutorials/writing-policies/go/10-raw-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:29
+msgid "xref:tutorials/writing-policies/rego/01-intro-rego.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:30
+msgid "xref:tutorials/writing-policies/rego/02-builtin-support.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:31
+msgid "Open Policy Agent"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:32
+msgid "xref:tutorials/writing-policies/rego/open-policy-agent/01-intro.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:33
+msgid "xref:tutorials/writing-policies/rego/open-policy-agent/02-create-policy.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:34
+msgid "xref:tutorials/writing-policies/rego/open-policy-agent/03-build-and-run.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:35
+msgid "xref:tutorials/writing-policies/rego/open-policy-agent/04-distribute.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:36
+msgid "xref:tutorials/writing-policies/rego/open-policy-agent/05-raw-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:37
+msgid "Gatekeeper"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:38
+msgid "xref:tutorials/writing-policies/rego/gatekeeper/01-intro.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:39
+msgid "xref:tutorials/writing-policies/rego/gatekeeper/02-create-policy.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:40
+msgid "xref:tutorials/writing-policies/rego/gatekeeper/03-build-and-run.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:41
+msgid "xref:tutorials/writing-policies/rego/gatekeeper/04-distribute.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:42
+msgid "xref:tutorials/writing-policies/dotnet.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:43
+msgid "xref:tutorials/writing-policies/swift.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:44
+msgid "xref:tutorials/writing-policies/typescript.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:45
+msgid "xref:tutorials/writing-policies/other-languages.adoc[]"
+msgstr ""
+
+#. type: Title ===
+#: docs/version-1.30/modules/en/nav.adoc:46
+#: docs/version-1.30/modules/en/pages/glossary.adoc:75
+#, no-wrap
+msgid "WASI"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:47
+msgid "xref:tutorials/writing-policies/wasi/01-intro-wasi.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:48
+msgid "xref:tutorials/writing-policies/wasi/02-raw-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:49
+msgid "xref:tutorials/writing-policies/metadata.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:50
+msgid "Testing policies"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:51
+msgid "xref:tutorials/testing-policies/index.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:52
+msgid "xref:tutorials/testing-policies/02-policy-authors.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:53
+msgid "xref:tutorials/testing-policies/03-cluster-operators.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:54
+msgid "xref:tutorials/verifying-kubewarden.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:55
+msgid "xref:tutorials/publish-policy-to-artifact-hub.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:56
+msgid "Explanations"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:57
+msgid "xref:explanations/mutating-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:58
+msgid "xref:explanations/context-aware-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:59
+msgid "xref:explanations/policy-groups.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:60
+msgid "xref:explanations/certificates.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:61
+msgid "xref:explanations/distributing-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:62
+msgid "Comparisons"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:63
+msgid "xref:explanations/comparisons/opa-comparison.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:64
+msgid "xref:explanations/audit-scanner/audit-scanner.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:65
+msgid "xref:explanations/audit-scanner/limitations.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:66
+msgid "xref:explanations/audit-scanner/policy-reports.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:67
+msgid "xref:explanations/architecture.adoc[{short-project-name} architecture]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:68
+msgid "Howtos"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:69
+msgid "xref:howtos/tasks.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:70
+msgid "xref:howtos/install-kwctl.adoc[Install `kwctl`]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:71
+msgid "xref:howtos/production-deployments.adoc[Production deployments]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:72
+msgid "xref:howtos/deploy-at-scale.adoc[Deployment at scale]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:73
+msgid "xref:howtos/audit-scanner.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:74
+msgid "xref:howtos/policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:75
+msgid "xref:howtos/emergency-disable.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:76
+msgid "Configuring Policy Servers"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:77
+msgid "xref:howtos/policy-servers/01-custom-cas.adoc[Using custom CAs]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:78
+msgid "xref:howtos/policy-servers/02-private-registry.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:79
+msgid ""
+"xref:howtos/policy-servers/03-production-deployments.adoc[Production "
+"deployments]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:80
+msgid "xref:howtos/policy-groups.adoc[Policy groups]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:81
+msgid "xref:howtos/psp-migration.adoc[PSP migration]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:82
+msgid "xref:howtos/vap-migration.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:83
+msgid ""
+"xref:howtos/pod-security-admission-with-kubewarden.adoc[Pod Security "
+"Admission]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:84
+msgid "xref:howtos/custom-certificate-authorities.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:85
+msgid "xref:howtos/raw-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:86
+msgid "xref:howtos/argocd-installation.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:87
+msgid "xref:howtos/security-hardening/security-hardening.adoc[Security]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:88
+msgid "xref:howtos/security-hardening/secure-supply-chain.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:89
+msgid "xref:howtos/security-hardening/webhook-mtls.adoc[Enable mTLS with K3s]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:90
+msgid "Air gap"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:91
+msgid "xref:howtos/airgap/01-requirements.adoc[Requirements]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:92
+msgid "xref:howtos/airgap/02-install.adoc[Installation]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:93
+msgid "xref:howtos/airgap/03-hauler.adoc[Hauler installation]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:94
+msgid "Telemetry quick starts"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:95
+msgid "xref:howtos/telemetry/10-opentelemetry-qs.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:96
+msgid "xref:howtos/telemetry/20-tracing-qs.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:97
+msgid "xref:howtos/telemetry/30-metrics-qs.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:98
+msgid "xref:howtos/telemetry/40-custom-otel-collector.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:99
+msgid "xref:howtos/Rancher-Fleet.adoc[Rancher Fleet]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:100
+msgid "Rancher UI extension"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:101
+msgid "xref:howtos/ui-extension/01-install.adoc[Quickstart]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:102
+msgid "xref:howtos/ui-extension/02-metrics.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:103
+msgid "xref:howtos/ui-extension/03-tracing.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:104
+msgid "Rancher Application Collection"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:105
+msgid "xref:howtos/application-collection/01-verify-images.adoc[Verify images]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:106
+msgid "Workarounds"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:107
+msgid ""
+"xref:howtos/workarounds/policy-server-certificate-expiry.adoc[Certificate "
+"rotation, releases ≥ v1.16]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:108
+msgid "xref:howtos/contribution-guide/contribution-guide.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:109
+msgid ""
+"xref:howtos/contribution-guide/contributing.adoc[Contributing to "
+"documentation]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:110
+msgid ""
+"xref:howtos/contribution-guide/suggesting-an-improvement.adoc[Improving "
+"documentation]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:111
+msgid "xref:howtos/gatekeeper-migration.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:112
+msgid "Reference"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:113
+msgid "xref:reference/CRDs.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:114
+msgid "xref:reference/dependency-matrix.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:115
+msgid "xref:reference/artifacts.adoc[Artifacts]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:116
+msgid "xref:reference/upgrade-path.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:117
+msgid "xref:reference/metrics-reference.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:118
+msgid "xref:reference/monitor-mode.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:119
+msgid "Policy specification"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:120
+msgid "xref:reference/spec/01-intro-spec.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:121
+msgid "xref:reference/spec/02-settings.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:122
+msgid "xref:reference/spec/03-validating-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:123
+msgid "xref:reference/spec/04-mutating-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:124
+msgid "xref:reference/spec/05-context-aware-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:125
+msgid "Host capabilities"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:126
+msgid "xref:reference/spec/host-capabilities/01-intro-host-capabilities.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:127
+msgid "xref:reference/spec/host-capabilities/02-signature-verifier-policies.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:128
+msgid "xref:reference/spec/host-capabilities/03-container-registry.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:129
+msgid "xref:reference/spec/host-capabilities/04-net.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:130
+msgid "xref:reference/spec/host-capabilities/05-crypto.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:131
+msgid "xref:reference/spec/host-capabilities/06-kubernetes.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:132
+msgid "xref:reference/oci-registries-support.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:133
+msgid "Security"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:134
+msgid "xref:reference/security-hardening/webhooks-hardening.adoc[Webhooks]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:135
+msgid "xref:reference/threat-model.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:136
+msgid "xref:reference/policy-evaluation-timeout.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:137
+msgid "xref:reference/verification-config.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:138
+msgid "xref:reference/sources_yaml.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:139
+msgid "xref:reference/kwctl-cli.adoc[`kwctl` CLI]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:140
+msgid "xref:reference/policy-server-cli.adoc[Policy Server CLI]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:141
+msgid "xref:personas.adoc[For who?]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:142
+msgid "xref:use-cases.adoc[Use cases]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:143
+msgid "xref:organization.adoc[Organization]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:144
+msgid "xref:enterprise.adoc[Enterprise]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:145
+msgid "xref:glossary.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: docs/version-1.30/modules/en/nav.adoc:145
+msgid "xref:disclosure.adoc[]"
+msgstr ""
+
+#.  Include shared project global variables
+#.  global variables for this version below:
 #. type: Title =
 #: docs/version-1.30/modules/en/pages/introduction.adoc:2
 #, no-wrap
@@ -1532,12 +2266,6 @@ msgstr ""
 #. type: #_policy_server
 #: docs/version-1.30/modules/en/pages/glossary.adoc:74
 msgid "WebAssembly Procedure Calls. https://wapc.io."
-msgstr ""
-
-#. type: Title ===
-#: docs/version-1.30/modules/en/pages/glossary.adoc:75
-#, no-wrap
-msgid "WASI"
 msgstr ""
 
 #. type: #_policy_server
