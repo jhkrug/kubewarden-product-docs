@@ -1,6 +1,6 @@
 include::partial$variables.adoc[]
 = Dokumentationsorganisation
-:revdate: 2025-11-07
+:revdate: 2025-11-10
 :page-revdate: {revdate}
 :sidebar_label: Organization
 :sidebar_position: 75

@@ -1,6 +1,6 @@
 include::partial$variables.adoc[]
 = Sicherheitsoffenlegung
-:revdate: 2025-11-07
+:revdate: 2025-11-10
 :page-revdate: {revdate}
 :description: Security disclosure.
 :doc-persona: ["kubewarden-all"]
