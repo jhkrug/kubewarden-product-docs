@@ -1,7 +1,8 @@
 include::partial$variables.adoc[]
 = ¿Qué es {project-name}?
-:revdate: 2025-11-10
+:revdate: 2025-11-03
 :page-revdate: {revdate}
+:page-languages: [en, es, de, zh]
 :description: Introducing {project-name}, a SUSE® Rancher Prime product.
 :doc-persona: ["kubewarden-all"]
 :doc-topic: ["introduction"]
