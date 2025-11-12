@@ -1,24 +1,23 @@
-= Managing Kubewarden with Rancher Fleet
+include::partial$variables.adoc[]
+= Managing {project-name} with {fleet-product-name}
 :revdate: 2025-05-22
 :page-revdate: {revdate}
-:description: Managing Kubewarden with Rancher Fleet.
+:description: Managing {project-name} with Rancher {fleet-product-name}.
 :doc-persona: ["kubewarden-operator", "kubewarden-integrator"]
 :doc-topic: ["operator-manual", "rancher-fleet"]
 :doc-type: ["howto"]
 :keywords: ["kubernetes", "kubewarden", "rancher fleet"]
-:sidebar_label: Rancher Fleet
-:sidebar_position: 130
 :current-version: {page-origin-branch}
 
-You can manage Kubewarden Helm charts,
-like other Helm charts, with https://fleet.rancher.io/[Rancher Fleet].
-Rancher Fleet uses Kubernetes CRDs
+You can manage {short-project-name} Helm charts,
+like other Helm charts, with {fleet-LINK}.
+{fleet-product-name} uses Kubernetes CRDs
 to define a GitOps approach to managing Kubernetes clusters.
-It does this by defining https://fleet.rancher.io/concepts[Fleet Bundles].
+It does this by defining {fleet-bundles-LINK}.
 
 == Installing
 
-The Kubewarden charts are standard charts,
+The {short-project-name} charts are standard charts,
 they depend transitively on each other:
 
 `kubewarden-crds` ← `kubewarden-controller` ← `kubewarden-defaults`
@@ -26,7 +25,7 @@ they depend transitively on each other:
 See the xref:/quick-start.adoc[Quickstart docs]
 for more information.
 
-Using Rancher Fleet, you can code the chart dependencies using
+Using {fleet-product-name}, you can code the chart dependencies using
 `dependsOn` in the https://fleet.rancher.io/ref-fleet-yaml[`fleet.yaml`] file.
 
 You may see transient errors until the charts are ready, such as:
@@ -46,10 +45,10 @@ they no longer appear.
 [CAUTION]
 ====
 
-When removing the GitRepo, all 3 Kubewarden charts get removed at once.
+When removing the GitRepo, all 3 {short-project-name} charts get removed at once.
 This means the `kubewarden-crds` chart gets removed.
 
-Kubewarden uses a pre-delete helm hook job in `kubewarden-controller` chart that deletes the default policy-server.
+{short-project-name} uses a pre-delete helm hook job in `kubewarden-controller` chart that deletes the default policy-server.
 This pre-delete hook is necessary to vacate the webhooks of the policies before deleting the PolicyServer.
 This is true any Policy Engine.
 If not, the cluster may have webhooks for policies that don't exist anymore
@@ -62,20 +61,20 @@ It means the removal is incomplete, leaving 'debris' in the cluster.
 
 
 Uninstalling CRDs automatically isn't normally supported by any tooling, and
-Rancher Fleet is no exception.
+{fleet-product-name} is no exception.
 
 To perform a correct removal,
 make sure to first remove the Bundle for `kubewarden-defaults` from the cluster.
 Do this by committing those changes to the repository holding
-the Fleet configuration and then waiting until it's applied.
+the {fleet-product-name} configuration and then waiting until it's applied.
 Then remove `kubewarden-controller` in the same way,
 and lastly, remove `kubewarden-crds`.
 
 Another option is to add 2 GitRepos, one for the CRDs only,
-and another for the rest of the Kubewarden charts.
-This lets you remove the Kubewarden charts first and the Kubewarden CRDs last.
+and another for the rest of the {short-project-name} charts.
+This lets you remove the {short-project-name} charts first and the {short-project-name} CRDs last.
 
 == Example
 
-For an example of Fleet bundle definitions see
+For an example of {fleet-product-name} bundle definitions see
 https://github.com/kubewarden/fleet-example[github.com/kubewarden/fleet-example].

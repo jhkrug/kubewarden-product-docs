@@ -69,3 +69,15 @@ endif::[]
 :Wasmtime: xref:glossary.adoc#_wasmtime[Wasmtime]
 
 // Glossary terms end
+
+// Cross product links are different between community and product builds
+ifeval::["{build-type}" == "community"]
+:fleet-product-name: Rancher Fleet
+:fleet-LINK: link:https://fleet.rancher.io/[Rancher Fleet]
+:fleet-bundles-LINK: link:https://fleet.rancher.io/concepts/fleet-bundles/[Fleet Bundles]
+endif::[]
+
+ifeval::["{build-type}" == "product"]
+:fleet-LINK: link:https://documentation.suse.com/cloudnative/continuous-delivery[{fleet-product-name}]
+:fleet-bundles-LINK: link:https://documentation.suse.com/cloudnative/continuous-delivery/latest/en/explanations/concepts.html[{fleet-product-name} Bundles]
+endif::[]
