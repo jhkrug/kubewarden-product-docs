@@ -2,8 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (2.0.1)
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
     afm (0.2.2)
     asciidoctor (2.0.23)
     asciidoctor-pdf (2.3.19)
@@ -18,7 +18,7 @@ GEM
       treetop (~> 1.6.0)
       ttfunk (~> 1.7.0)
     concurrent-ruby (1.3.5)
-    css_parser (1.21.1)
+    css_parser (1.22.0)
       addressable
     hashery (2.1.2)
     matrix (0.4.2)
@@ -45,7 +45,7 @@ GEM
     prawn-templates (0.1.2)
       pdf-reader (~> 2.0)
       prawn (~> 2.2)
-    public_suffix (6.0.2)
+    public_suffix (7.0.5)
     rexml (3.4.2)
     rouge (4.5.2)
     ruby-rc4 (0.1.5)
